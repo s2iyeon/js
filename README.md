@@ -1,6 +1,9 @@
 # 멋쟁이 사자처럼 FrontEnd BootCamp 15기 자바스크립트 프로그래밍 저장소 
 - 예제 테스트(GitHub Page): <https://febc-15.github.io/js/workspace-ins>
 
+## 단원
+### [1. 자바스크립트 기초 문법](docs/01.js_basic.md)
+
 # 개발 환경 구축
 ## 프로그램 설치
 - 본인의 OS에 맞는 버전 다운로드 후 설치
