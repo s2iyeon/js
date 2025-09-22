@@ -97,6 +97,7 @@
   ```bash
   npx live-server workspace
   ```
+  + ```Need to install the following packages: live-server@x.x.x Ok to proceed? (y)``` 메세지가 나올 경우 엔터 눌러서 설치
 
 #### 테스트
 - 웹 브라우저로 접속
