@@ -93,7 +93,7 @@
 #### 웹 서버 구동
 - VSCode의 터미널로 이동
   + VSCode 하단의 TERMINAL이 보이지 않으면 View > Terminal
-- Live Server 구동
+- 프로젝트 루트에서 Live Server 구동
   ```bash
   npx live-server workspace
   ```
