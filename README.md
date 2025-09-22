@@ -80,7 +80,7 @@
 ### 터미널 테스트
 - workspace/ch01/ex01-02.js 파일 작성
   ```js
-  console.log(hello('Hello 자바스크립트'));
+  console.log('Hello 자바스크립트');
   ```
 
 - 실행
