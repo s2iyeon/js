@@ -47,7 +47,7 @@
 ### Visual Studio Code 설정
 1. VSCode 실행
 2. 프로젝트 선택
-    - File > Open Folder... > febc13/01_js/JS 선택
+    - File > Open Folder... > febc15/01_js/JS 선택
 3. File > Preferences > Settings > User: 이곳에서 설정한 항목은 모든 프로젝트에 공통 적용
     - "Editor: Font Size": 각자 맞춰서 조절
     - "Files: Auto Save": onFocusChange
@@ -64,9 +64,9 @@
 
 ### sample 폴더 복사
 - 작업 디렉토리 생성
-    ```bash
-    mkdir workspace
-    ```
+  ```bash
+  mkdir workspace
+  ```
 
 - sample/01/workspace 폴더 내용을 작업 디렉토리에 복사
   ```bash
@@ -91,27 +91,27 @@
 
 ### 웹 브라우저 테스트
 #### 웹 서버 구동
-1. VSCode의 터미널로 이동
-    - VSCode 하단의 TERMINAL이 보이지 않으면 View > Terminal
-2. Live Server 구동
-    ```bash
-    npx live-server workspace
-    ```
+- VSCode의 터미널로 이동
+  + VSCode 하단의 TERMINAL이 보이지 않으면 View > Terminal
+- Live Server 구동
+  ```bash
+  npx live-server workspace
+  ```
 
 #### 테스트
-1. 웹 브라우저로 접속
-    + <http://127.0.0.1:8080> 또는 <http://localhost:8080>
-2. 각 예제 클릭해서 테스트
-    + .js: Javascript 문법 관련 실습. 웹브라우저의 개발자 도구 > 콘솔 탭에서 출력력 결과 확인
-    + .html: DOM, Ajax 관련 실습. 웹브라우저에서 새로운 화면으로 이동 후 테스트
+- 웹 브라우저로 접속
+  + <http://127.0.0.1:8080> 또는 <http://localhost:8080>
+- 각 예제 클릭해서 테스트
+  + .js: Javascript 문법 관련 실습. 웹브라우저의 개발자 도구 > 콘솔 탭에서 출력 결과 확인
+  + .html: DOM, Ajax 관련 실습. 웹브라우저에서 새로운 화면으로 이동 후 테스트
 
 # 팁
 - VSCode에서 소스코드 비교
-  - 비교할 두개의 파일을 VSCode에서 오픈(예시, student.js, ins.js)
-  - student.js 파일이 활성화 되어있는 상태에서
-  - View > Command Palette (단축키 F1) > File: Compare Active File With... 선택
-  - 비교할 대상 파일 선택(ins.js)
-  - student.js <-> ins.js 파일의 차이점 쉽게 확인 가능
+  + 비교할 두개의 파일을 VSCode에서 오픈(예시, student.js, ins.js)
+  + student.js 파일이 활성화 되어있는 상태에서
+  + View > Command Palette (단축키 F1) > File: Compare Active File With... 선택
+  + 비교할 대상 파일 선택(ins.js)
+  + student.js <-> ins.js 파일의 차이점 쉽게 확인 가능
 
 # 참고 사이트
 ## 자바스크립트 학습
@@ -122,13 +122,13 @@
 
 ## 코딩 테스트
 - 백준
-  - https://www.acmicpc.net
-  - 단계별로 풀어보기: https://www.acmicpc.net/step
+  + https://www.acmicpc.net
+  + 단계별로 풀어보기: https://www.acmicpc.net/step
 - 프로그래머스 코딩 테스트
-  - https://school.programmers.co.kr/learn/challenges
-  - 기초 트레이닝: https://school.programmers.co.kr/learn/challenges/training?order=acceptance_desc&languages=javascript
-  - 입문: https://school.programmers.co.kr/learn/challenges/beginner?order=acceptance_desc
-  - 레벨 1: https://school.programmers.co.kr/learn/challenges?order=acceptance_desc&languages=javascript&page=1&levels=1
+  + https://school.programmers.co.kr/learn/challenges
+  + 기초 트레이닝: https://school.programmers.co.kr/learn/challenges/training?order=acceptance_desc&languages=javascript
+  + 입문: https://school.programmers.co.kr/learn/challenges/beginner?order=acceptance_desc
+  + 레벨 1: https://school.programmers.co.kr/learn/challenges?order=acceptance_desc&languages=javascript&page=1&levels=1
 
 ## 온라인 웹 개발 에디터(HTML, CSS, JS)
 - CodePen: <https://codepen.io>
