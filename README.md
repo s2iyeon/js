@@ -83,6 +83,12 @@
   console.log(hello('Hello 자바스크립트'));
   ```
 
+- 실행
+  ```bash
+  cd workspace/ch01
+  node ex01-02.js
+  ```
+
 ### 웹 브라우저 테스트
 #### 웹 서버 구동
 1. VSCode의 터미널로 이동
@@ -98,12 +104,6 @@
 2. 각 예제 클릭해서 테스트
     + .js: Javascript 문법 관련 실습. 웹브라우저의 개발자 도구 > 콘솔 탭에서 출력력 결과 확인
     + .html: DOM, Ajax 관련 실습. 웹브라우저에서 새로운 화면으로 이동 후 테스트
-
-### Node.js 테스트
-```bash
-cd workspace/ch01
-node ex01-04.js
-```
 
 # 팁
 - VSCode에서 소스코드 비교
