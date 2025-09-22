@@ -78,12 +78,9 @@
 ## 실습 테스트
 
 ### 터미널 테스트
-- workspace/ch06/ex06-01.js 파일 작성
+- workspace/ch01/ex01-02.js 파일 작성
   ```js
-  function hello(name: string): string {
-    return 'Hello ' + name;
-  }
-  console.log(hello('자바스크립트'));
+  console.log(hello('Hello 자바스크립트'));
   ```
 
 ### 웹 브라우저 테스트
