@@ -80,7 +80,7 @@
 ### 터미널 테스트
 - workspace/ch01/ex01-02.js 파일 작성
   ```js
-  console.log(hello('Hello 자바스크립트'));
+  console.log('Hello 자바스크립트');
   ```
 
 - 실행
@@ -93,10 +93,11 @@
 #### 웹 서버 구동
 - VSCode의 터미널로 이동
   + VSCode 하단의 TERMINAL이 보이지 않으면 View > Terminal
-- Live Server 구동
+- 프로젝트 루트에서 Live Server 구동
   ```bash
   npx live-server workspace
   ```
+  + ```Need to install the following packages: live-server@x.x.x Ok to proceed? (y)``` 메세지가 나올 경우 엔터 눌러서 설치
 
 #### 테스트
 - 웹 브라우저로 접속
