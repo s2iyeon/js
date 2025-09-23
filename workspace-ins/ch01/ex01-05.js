@@ -11,8 +11,8 @@ console.log('a의 값', a);
 // 여러 변수 동시 선언
 var b, c; // 변수 두개 선언, 선언만 된 상태의 변수는 undefined 값을 가짐
 var d = 300; // 변수 선언 + 초기화
-console.log('b', b);
-console.log('c', c);
+console.log('b', b); // undefined
+console.log('c', c); // undefined
 console.log('d', d);
 
 // 선언하지 않은 변수를 사용할 경우 에러 발생
