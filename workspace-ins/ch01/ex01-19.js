@@ -66,22 +66,49 @@ let day = 7;
 
 // if-else if 문으로 작성
 // 출력 예시: 일요일
-if (day === 1) {
-  console.log('월요일');
-} else if (day === 2) {
-  console.log('화요일');
-} else if (day === 3) {
-  console.log('수요일');
-} else if (day === 4) {
-  console.log('목요일');
-} else if (day === 5) {
-  console.log('금요일');
-} else if (day === 6) {
-  console.log('토요일');
-} else if (day === 7) {
-  console.log('일요일');
-} else {
-  console.log('잘못된 요일');
+// if (day === 1) {
+//   console.log('월요일');
+// } else if (day === 2) {
+//   console.log('화요일');
+// } else if (day === 3) {
+//   console.log('수요일');
+// } else if (day === 4) {
+//   console.log('목요일');
+// } else if (day === 5) {
+//   console.log('금요일');
+// } else if (day === 6) {
+//   console.log('토요일');
+// } else if (day === 7) {
+//   console.log('일요일');
+// } else {
+//   console.log('잘못된 요일');
+// }
+
+// switch로 작성
+switch (day) {
+  case 1:
+    console.log('월요일');
+    break;
+  case 2:
+    console.log('화요일');
+    break;
+  case 3:
+    console.log('수요일');
+    break;
+  case 4:
+    console.log('목요일');
+    break;
+  case 5:
+    console.log('금요일');
+    break;
+  case 6:
+    console.log('토요일');
+    break;
+  case 7:
+    console.log('일요일');
+    break;
+  default:
+    console.log('잘못된 요일');
 }
 
 
@@ -93,16 +120,42 @@ let month = 9;
 
 // if-else if 문으로 작성
 // 출력 예시: 가을
-if (month >= 3 && month <= 5) {
-  console.log('봄');
-} else if (month === 6 || month === 7 || month === 8) {
-  console.log('여름');
-} else if (month === 9 || month === 10 || month === 11) {
-  console.log('가을');
-} else if (month === 12 || month === 1 || month === 2) {
-  console.log('겨울');
-} else {
-  console.log('잘못된 월');
+// if (month >= 3 && month <= 5) {
+//   console.log('봄');
+// } else if (month === 6 || month === 7 || month === 8) {
+//   console.log('여름');
+// } else if (month === 9 || month === 10 || month === 11) {
+//   console.log('가을');
+// } else if (month === 12 || month === 1 || month === 2) {
+//   console.log('겨울');
+// } else {
+//   console.log('잘못된 월');
+// }
+
+// switch로 작성
+switch (month) {
+  case 3:
+  case 4:
+  case 5:
+    console.log('봄');
+    break;
+  case 6:
+  case 7:
+  case 8:
+    console.log('여름');
+    break;
+  case 9:
+  case 10:
+  case 11:
+    console.log('가을');
+    break;
+  case 12:
+  case 1:
+  case 2:
+    console.log('겨울');
+    break;
+  default:
+    console.log('잘못된 월');
 }
 
 
