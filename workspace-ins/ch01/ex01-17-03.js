@@ -8,15 +8,21 @@ const isSeller = false; // 판매자
 const isAdmin = false; // 관리자
 
 // 로그인 상태 출력
-// "로그인 상태"/로그아웃 상태
-if (isLogin) console.log('로그인 상태');
-if (!isLogin) console.log('로그아웃 상태');
-
+if (isLogin) {
+  console.log("로그인 상태");
+} else {
+  console.log("로그아웃 상태");
+}
 // 사용자 유형 출력
-// "구매자"/판매자/관리자
-if (isUser) console.log('구매자');
-if (isSeller) console.log('판매자');
-if (isAdmin) console.log('관리자');
+if (isUser) {
+  console.log("구매자");
+} else {
+  if (isSeller) {
+    console.log("판매자");
+  } else {
+    console.log("관리자");
+  }
+}
 
 // 로그인 상태와 사용자 유형을 조합해서 출력
 // "구매자 로그인 상태"/구매자 로그아웃 상태
