@@ -3,9 +3,14 @@
 */
 
 
-const n = 1; // 작은수
-const m = 10; // 큰수
+let n1 = 5; // 작은수
+let n2 = 9; // 큰수
 let result = null;
+
+// 작은수와 큰 수가 구분없이 입력 될 경우
+const n = Math.min(n1, n2);
+const m = Math.max(n1, n2);
+
 // n ~ m 까지의 정수중에서 가장 작은 짝수를 찾아서 출력하세요.
 // for(let i=m; i>=n; i--) {
 //   if(i%2 === 0){
@@ -42,7 +47,7 @@ for(let i=n; i<=m; i++){
     console.log('홀수:', i);
     continue; // 가독성이 떨어질 수 있으므로 잘 사용하지 않음
   }
-  
+
   console.log('짝수:', i);
 }
 
