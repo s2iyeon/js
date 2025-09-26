@@ -5,9 +5,13 @@
 ### [1. 자바스크립트 기초 문법](docs/01.js_basic.md)
 
 # 수업 진도
-## 1주차 - 5일, 2025.09.22(월) ~ 2025.09.26(금)
 
-### 1일차(2025.09.22 월)
+<details>
+<summary><h2>1주차 - 5일, 2025.09.22(월) ~ 2025.09.26(금)</h2></summary>
+
+<details>
+<summary><h3>1일차(2025.09.22 월)</h3></summary>
+
 #### 오전(3시간)
 - 📜 JS 레포지토리 README: <https://github.com/FEBC-15/js>
   + [💻 개발환경 구축](?tab=readme-ov-file#개발-환경-구축)
@@ -22,7 +26,11 @@
   + 💻 [01-02 외부 자바스크립트 파일 로드](workspace-ins/ch01/ex01-02.html)
   + 💻 [01-03 웹 페이지 파싱 순서](workspace-ins/ch01/ex01-03.html)
 
-### 2일차(2025.09.23 화)
+</details>
+
+<details>
+<summary><h3>2일차(2025.09.23 화)</h3></summary>
+
 #### 오전(3시간)
 - 📜 [6. 명령문과 주석](docs/01.js_basic.md#6-명령문과-주석)
   + 💻 [01-04 명령문과 주석](workspace-ins/ch01/ex01-04.js)
@@ -42,7 +50,11 @@
   + 💻 [01-09-02 대입 연산자 - 1부터 10까지의 모든 수의 합계](workspace-ins/ch01/ex01-09-02.js)
   + 💻 [01-10 증감 연산자 a++, a--, ++a, --a](workspace-ins/ch01/ex01-10.js)
 
-### 3일차(2025.09.24 수)
+</details>
+
+<details>
+<summary><h3>3일차(2025.09.24 수)</h3></summary>
+
 #### 오전(3시간)
 - 📜 [11. 연산자](docs/01.js_basic.md#11-연산자)
   + 💻 [01-11 비교 연산자 >, >=, <, <=, ==, !=, ===, !==](workspace-ins/ch01/ex01-11.js)
@@ -60,7 +72,11 @@
   + ✍️ 과제: [01-17-02 if-else문을 사용하여 학점 출력](workspace-ins/ch01/ex01-17-02.js)
   + ✍️ 과제: [01-17-03 if-else문을 사용하여 사용자와 로그인 상태 출력](workspace-ins/ch01/ex01-17-03.js)
 
-### 4일차(2025.09.25 목)
+</details>
+
+<details>
+<summary><h3>4일차(2025.09.25 목)</h3></summary>
+
 #### 오전(3시간)
 - 📜 [12. 조건문](docs/01.js_basic.md#12-조건문)
   + 💻 [01-17-02 if-else문을 사용하여 학점 출력](workspace-ins/ch01/ex01-17-02.js)
@@ -75,8 +91,12 @@
   + 💻 [01-18-05 if-else if문을 사용하여 정보처리 기사 필기 시험 결과 출력](workspace-ins/ch01/ex01-18-05.js)
   + 💻 [01-19 switch문을 사용하여 계산기, 요일, 계절 출력](workspace-ins/ch01/ex01-19.js)
   + 💻 [01-19-02 switch문을 사용하여 학점 출력](workspace-ins/ch01/ex01-19-02.js)
-  
-### 5일차(2025.09.26 금)
+
+</details>
+
+<details>
+<summary><h3>5일차(2025.09.26 금)</h3></summary>
+
 #### 오전(3시간)
 - 📜 [13. 반복문](docs/01.js_basic.md#13-반복문)
   + 💻 [01-20 while문](workspace-ins/ch01/ex01-20.js)
@@ -95,6 +115,9 @@
 - 📜 [14. 참조 타입(Object, 객체)](docs/01.js_basic.md#14-참조-타입object-객체)
   + 💻 [01-23 new Object() - 생성자 함수로 객체 생성](workspace-ins/ch01/ex01-23.js)
 
+</details>
+
+</details>
 
 # 개발 환경 구축
 ## 프로그램 설치
