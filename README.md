@@ -1,8 +1,123 @@
 # 멋쟁이 사자처럼 FrontEnd BootCamp 15기 자바스크립트 프로그래밍 저장소 
 - 예제 테스트(GitHub Page): <https://febc-15.github.io/js/workspace-ins>
 
-## 단원
+## 목차
 ### [1. 자바스크립트 기초 문법](docs/01.js_basic.md)
+
+# 수업 진도
+
+<details>
+<summary><h2>1주차 - 5일, 2025.09.22(월) ~ 2025.09.26(금)</h2></summary>
+
+<details>
+<summary><h3>1일차(2025.09.22 월)</h3></summary>
+
+#### 오전(3시간)
+- 📜 JS 레포지토리 README: <https://github.com/FEBC-15/js>
+  + [💻 개발환경 구축](?tab=readme-ov-file#개발-환경-구축)
+- 📜 [1. 자바스크립트란?](docs/01.js_basic.md#1-자바스크립트란)
+- 📜 [2. 자바스크립트 역사](docs/01.js_basic.md#2-자바스크립트-역사)
+
+#### 오후(5시간)
+- 📜 [3. 자바스크립트로 할 수 있는 일](docs/01.js_basic.md#3-자바스크립트로-할-수-있는-일)
+- 📜 [4. 개발 환경 구성](docs/01.js_basic.md#4-개발-환경-구성)
+- 📜 [5. 자바스크립트 코드의 위치](docs/01.js_basic.md#5-자바스크립트-코드의-위치)
+  + 💻 [01-01 인라인 자바스크립트](./workspace-ins/ch01/ex01-01.html)
+  + 💻 [01-02 외부 자바스크립트 파일 로드](workspace-ins/ch01/ex01-02.html)
+  + 💻 [01-03 웹 페이지 파싱 순서](workspace-ins/ch01/ex01-03.html)
+
+</details>
+
+<details>
+<summary><h3>2일차(2025.09.23 화)</h3></summary>
+
+#### 오전(3시간)
+- 📜 [6. 명령문과 주석](docs/01.js_basic.md#6-명령문과-주석)
+  + 💻 [01-04 명령문과 주석](workspace-ins/ch01/ex01-04.js)
+- 📜 [7. 변수(variable)](docs/01.js_basic.md#7-변수variable)
+  + 💻 [01-05 변수 선언](workspace-ins/ch01/ex01-05.js)
+
+#### 오후(3시간)
+- 📜 [8. 리터럴(literal)](docs/01.js_basic.md#8-리터럴literal)
+- 📜 [9. 데이터 타입](docs/01.js_basic.md#9-데이터-타입)
+- 📜 [10. 원시 타입(Primitive type)](docs/01.js_basic.md#10-원시-타입primitive-type)
+  + 💻 [01-06 기본 데이터 타입 - Number, String, Boolean, undefined, null](workspace-ins/ch01/ex01-06.js)
+  + 💻 [01-07 기본 데이터 타입 - BigInt](workspace-ins/ch01/ex01-07.js)
+- 📜 [11. 연산자](docs/01.js_basic.md#11-연산자)
+  + 💻 [01-08 산술 연산자 +, -, *, /, %, **](workspace-ins/ch01/ex01-08.js)
+  + 💻 [01-08-02 산술 연산자 - 산술 연산자를 사용하여 계산된 결과를 출력](workspace-ins/ch01/ex01-08-02.js)
+  + 💻 [01-09 대입 연산자 =, +=, -=, *=, /=, %=, **=](workspace-ins/ch01/ex01-09.js)
+  + 💻 [01-09-02 대입 연산자 - 1부터 10까지의 모든 수의 합계](workspace-ins/ch01/ex01-09-02.js)
+  + 💻 [01-10 증감 연산자 a++, a--, ++a, --a](workspace-ins/ch01/ex01-10.js)
+
+</details>
+
+<details>
+<summary><h3>3일차(2025.09.24 수)</h3></summary>
+
+#### 오전(3시간)
+- 📜 [11. 연산자](docs/01.js_basic.md#11-연산자)
+  + 💻 [01-11 비교 연산자 >, >=, <, <=, ==, !=, ===, !==](workspace-ins/ch01/ex01-11.js)
+  + 💻 [01-12 동등 연산자와 일치 연산자의 차이](workspace-ins/ch01/ex01-12.js)
+  + 💻 [01-13 논리 연산자 &&, ||, !](workspace-ins/ch01/ex01-13.js)
+  + 💻 [01-14 삼항 연산자 ?](workspace-ins/ch01/ex01-14.js)
+  + 💻 [01-15 연산자 우선순위](workspace-ins/ch01/ex01-15.js)
+
+#### 오후(3시간)
+- 📜 [12. 조건문](docs/01.js_basic.md#12-조건문)
+  + 💻 [01-16 if문](workspace-ins/ch01/ex01-16.js)
+  + 💻 [01-16-02 if문을 사용하여 학점 출력](workspace-ins/ch01/ex01-16-02.js)
+  + 💻 [01-16-03 if문을 이용하여 사용자와 로그인 상태 출력](workspace-ins/ch01/ex01-16-03.js)
+  + 💻 [01-17 if-else문](workspace-ins/ch01/ex01-17.js)
+  + ✍️ 과제: [01-17-02 if-else문을 사용하여 학점 출력](workspace-ins/ch01/ex01-17-02.js)
+  + ✍️ 과제: [01-17-03 if-else문을 사용하여 사용자와 로그인 상태 출력](workspace-ins/ch01/ex01-17-03.js)
+
+</details>
+
+<details>
+<summary><h3>4일차(2025.09.25 목)</h3></summary>
+
+#### 오전(3시간)
+- 📜 [12. 조건문](docs/01.js_basic.md#12-조건문)
+  + 💻 [01-17-02 if-else문을 사용하여 학점 출력](workspace-ins/ch01/ex01-17-02.js)
+  + 💻 [01-17-03 if-else문을 사용하여 사용자와 로그인 상태 출력](workspace-ins/ch01/ex01-17-03.js)
+  + 💻 [01-18 if-else if문](workspace-ins/ch01/ex01-18.js)
+  + 💻 [01-18-02 if-else if문을 사용하여 학점 출력](workspace-ins/ch01/ex01-18-02.js)
+  + 💻 [01-18-03 if-else if문을 사용하여 사용자와 로그인 상태 출력](workspace-ins/ch01/ex01-18-03.js)
+
+#### 오후(3시간)
+- 📜 [12. 조건문](docs/01.js_basic.md#12-조건문)
+  + 💻 [01-18-04 if-else if문을 사용하여 계산기, 요일, 계절 출력](workspace-ins/ch01/ex01-18-04.js)
+  + 💻 [01-18-05 if-else if문을 사용하여 정보처리 기사 필기 시험 결과 출력](workspace-ins/ch01/ex01-18-05.js)
+  + 💻 [01-19 switch문을 사용하여 계산기, 요일, 계절 출력](workspace-ins/ch01/ex01-19.js)
+  + 💻 [01-19-02 switch문을 사용하여 학점 출력](workspace-ins/ch01/ex01-19-02.js)
+
+</details>
+
+<details>
+<summary><h3>5일차(2025.09.26 금)</h3></summary>
+
+#### 오전(3시간)
+- 📜 [13. 반복문](docs/01.js_basic.md#13-반복문)
+  + 💻 [01-20 while문](workspace-ins/ch01/ex01-20.js)
+  + 💻 [01-20-02 while문을 사용하여 홀수/짝수 합계 구하기](workspace-ins/ch01/ex01-20-02.js)
+  + 💻 [01-20-03 while문을 사용하여 쌀알 모으기](workspace-ins/ch01/ex01-20-03.js)
+  + 💻 [01-20-04 do-while문](workspace-ins/ch01/ex01-20-04.js)
+  + 💻 [01-21 for문](workspace-ins/ch01/ex01-21.js)
+
+#### 오후(3시간)
+- 📜 [13. 반복문](docs/01.js_basic.md#13-반복문)
+  + 💻 [01-21-02 for문을 사용하여 별찍기](workspace-ins/ch01/ex01-21-02.js)
+  + 💻 [01-21-03 for문을 이용해서 구구단 작성](workspace-ins/ch01/ex01-21-03.js)
+  + 💻 [01-22 break, continue](workspace-ins/ch01/ex01-22.js)
+  + ✍️ 과제: [01-21-02 for문을 사용하여 별찍기](workspace-ins/ch01/ex01-21-02.js)
+  + ✍️ 과제: [01-21-03 for문을 이용해서 구구단 작성](workspace-ins/ch01/ex01-21-03.js)
+- 📜 [14. 참조 타입(Object, 객체)](docs/01.js_basic.md#14-참조-타입object-객체)
+  + 💻 [01-23 new Object() - 생성자 함수로 객체 생성](workspace-ins/ch01/ex01-23.js)
+
+</details>
+
+</details>
 
 # 개발 환경 구축
 ## 프로그램 설치
