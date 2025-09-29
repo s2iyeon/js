@@ -35,3 +35,4 @@ user2.age = 27; // user 객체에 age 속성을 추가
 user2['hobby'] = '객체연구'; // user 객체에 hobby 속성을 추가
 
 console.log(user2.name, user2['age'], user2.hobby);
+console.log(typeof user, user);
