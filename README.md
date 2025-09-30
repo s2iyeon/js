@@ -116,6 +116,7 @@
   + 💻 [01-23 new Object() - 생성자 함수로 객체 생성](workspace-ins/ch01/ex01-23.js)
 
 </details>
+</details>
 
 <details>
 <summary><h2>2주차 - 4일, 2025.09.29(월) ~ 2025.10.02(목)</h2></summary>
