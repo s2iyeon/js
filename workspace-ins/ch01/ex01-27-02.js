@@ -24,7 +24,7 @@ for(let num of arr){
 console.log('홀수 합계', oddSum); // 21
 
 // 짝수의 합계 출력(for...in)
-for(let i of arr){
+for(let i in arr){
   const num = arr[i];
   if(num%2 === 0){
     evenSum += num;
@@ -34,7 +34,10 @@ for(let i of arr){
 console.log('짝수 합계', evenSum); // 14
 
 // 류혜진
-console.log('류혜진')
+console.log('류혜진');
+sum = 0;
+oddSum = 0;
+evenSum = 0;
 // 모든 요소의 합계 출력
 for (i = 0; i < arr.length; i++) {
   let num = arr[i];
@@ -49,7 +52,8 @@ for (let sum of arr) {
     oddSum += sum
   }
 }
-  console.log('홀수 합계.', oddSum);
+console.log('홀수 합계.', oddSum);
+
 // 짝수의 합계 출력
 for (let i in arr) {       
   let num = arr[i];       
