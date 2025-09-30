@@ -116,7 +116,29 @@
   + 💻 [01-23 new Object() - 생성자 함수로 객체 생성](workspace-ins/ch01/ex01-23.js)
 
 </details>
+</details>
 
+<details>
+<summary><h2>2주차 - 4일, 2025.09.29(월) ~ 2025.10.02(목)</h2></summary>
+
+<details>
+<summary><h3>6일차(2025.09.29 월)</h3></summary>
+
+#### 오전(3시간)
+- 📜 [13. 반복문](docs/01.js_basic.md#13-반복문)
+  + ✍️ 과제 풀이: [01-21-02 for문을 사용하여 별찍기](workspace-ins/ch01/ex01-21-02.js)
+  + ✍️ 과제 풀이: [01-21-03 for문을 이용해서 구구단 작성](workspace-ins/ch01/ex01-21-03.js)
+- 📜 [14. 참조 타입(Object, 객체)](docs/01.js_basic.md#14-참조-타입object-객체)
+  + 💻 [01-23 new Object() - 생성자 함수로 객체 생성](workspace-ins/ch01/ex01-23.js)
+  + 💻 [01-23-02 new Object() - 국어, 영어, 수학 총점과 평균 출력](workspace-ins/ch01/ex01-23-02.js)
+
+#### 오후(3시간)
+- 📜 [14. 참조 타입(Object, 객체)](docs/01.js_basic.md#14-참조-타입object-객체)
+  + 💻 [01-24 JSON 표기법 - 리터럴 방식으로 객체 생성](workspace-ins/ch01/ex01-24.js)
+  + 💻 [01-24-02 JSON 표기법 - 국어, 영어, 수학 총점과 평균 출력](workspace-ins/ch01/ex01-24-02.js)
+  + 💻 [01-25 객체의 속성 관리](workspace-ins/ch01/ex01-25.js)
+
+</details>
 </details>
 
 # 개발 환경 구축
