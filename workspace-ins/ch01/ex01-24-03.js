@@ -16,6 +16,8 @@ const score = {
   }
 };
 
+console.log(JSON.stringify(score));
+
 // TODO 반복적인 sum, avg 계산 작업을 줄이기 위한 방법은???
 // score.sum = score.kor + score.eng + score.math;
 // score.avg = score.sum / 3;
