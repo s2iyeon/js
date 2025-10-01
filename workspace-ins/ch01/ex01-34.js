@@ -13,6 +13,7 @@
 function toaster(time, bread){
   return time + '초 동안 구워진 ' + bread;
 }
+toaster.year = 2025; // object와 동일하게 사용 가능
 
 const toast1 = toaster(40, '우유 식빵');
 const toast2 = toaster(60);
@@ -22,3 +23,4 @@ console.log(toast1); // 40초 동안 구워진 우유 식빵
 console.log(toast2); // 60초 동안 구워진 undefined
 console.log(toast3); // 30초 동안 구워진 우유 식빵
 
+console.log(toaster.year);
