@@ -139,6 +139,21 @@
   + 💻 [01-25 객체의 속성 관리](workspace-ins/ch01/ex01-25.js)
 
 </details>
+
+<details>
+<summary><h3>7일차(2025.09.30 화)</h3></summary>
+
+#### 오전(3시간)
+- 📜 [15. 참조 타입(Array, 배열)](docs/01.js_basic.md#15-참조-타입array-배열)
+  + 💻 [01-26 배열 생성, 읽기, 쓰기](workspace-ins/ch01/ex01-26.js)
+  + 💻 [01-27 모든 요소 읽기 1 - for 루프, for...of, for...in](workspace-ins/ch01/ex01-27.js)
+
+#### 오후(3시간)
+- 📜 [15. 참조 타입(Array, 배열)](docs/01.js_basic.md#15-참조-타입array-배열)
+  + 💻 [01-27-02 배열 요소의 합계, 홀수의 합계, 짝수의 합계를 출력](workspace-ins/ch01/ex01-27-02.js)
+  + 💻 [01-28 유사 배열 객체](workspace-ins/ch01/ex01-28.js)
+</details>
+
 </details>
 
 # 개발 환경 구축
