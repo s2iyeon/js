@@ -25,7 +25,9 @@ function printArr(arr) {
 // 진짜 배열
 const colorArr = [ 'orange', 'yellow', 'green' ];
 colorArr.push('black');
+colorArr.push('white');
 printArr(colorArr);
+console.log(colorArr);
 
 // 유사 배열 객체
 const colorObj = {
@@ -38,6 +40,7 @@ const colorObj = {
     colorObj.length++;
   }
 };
+
 // colorObj[3] = 'black';
 // colorObj.length++;
 
@@ -46,4 +49,6 @@ const colorObj = {
 
 colorObj.push('black');
 colorObj.push('white');
+console.log(colorObj);
 printArr(colorObj);
+
