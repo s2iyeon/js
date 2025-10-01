@@ -16,13 +16,15 @@ function doorLock(password) {
   // 등록된 비밀번호
   const pwd = '1357'; // 최소 4자리
   // 만약 입력한 비밀번호가 등록된 비밀번호보다 자리가 많을 경우 뒷자리를 등록된 비밀번호 길이만큼 추출
+  // password: '2342341357' 10자리
+  // pwd: '1357' 4자리
   // if(password?.length > pwd.length){
-  //   // 2342341357일 경우 1357만 추출
   //   let subPassword = '';
-  //   const start = password.length-pwd.length;
+  //   const start = password.length-pwd.length; // 6
   //   for(let i=start; i<password.length; i++){
-  //     subPassword += password[i];
+  //     subPassword += password[i]; // 1357
   //   }
+  //   // '2342341357' -> '1357'
   //   password = subPassword;
   // }
 
