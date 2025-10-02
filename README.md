@@ -154,6 +154,51 @@
   + 💻 [01-28 유사 배열 객체](workspace-ins/ch01/ex01-28.js)
 </details>
 
+<details>
+<summary><h3>8일차(2025.10.01 수)</h3></summary>
+
+#### 오전(3시간)
+- 📜 [15. 참조 타입(Array, 배열)](docs/01.js_basic.md#15-참조-타입array-배열)
+  + 💻 [01-29 2차원 배열](workspace-ins/ch01/ex01-29.js)
+- 📜 [16. 참조 타입(Function, 함수)](docs/01.js_basic.md#16-참조-타입function-함수)
+  + 💻 [01-30 기본 함수](workspace-ins/ch01/ex01-30.js)
+  + 💻 [01-31 매개변수를 가진 함수](workspace-ins/ch01/ex01-31.js)
+
+#### 오후(3시간)
+- 📜 [16. 참조 타입(Function, 함수)](docs/01.js_basic.md#16-참조-타입function-함수)
+  + 💻 [01-32 매개변수를 가진 함수 - 도어락](workspace-ins/ch01/ex01-32.js)
+  + 💻 [01-33 반환값이 있는 함수](workspace-ins/ch01/ex01-33.js)
+  + 💻 [01-34 반환값이 있는 함수 - 토스터](workspace-ins/ch01/ex01-34.js)
+- 📜 [17. 참조 타입의 특징](docs/01.js_basic.md#17-참조-타입의-특징)
+  + 💻 [01-37 Call by Value와 Call by Reference 차이](workspace-ins/ch01/ex01-37.js)
+</details>
+
+<details>
+<summary><h3>9일차(2025.10.02 목)</h3></summary>
+
+#### 오전(3시간)
+- 📜 [17. 참조 타입의 특징](docs/01.js_basic.md#17-참조-타입의-특징)
+  + 💻 [01-37 Call by Value와 Call by Reference 차이](workspace-ins/ch01/ex01-37.js)
+- 📜 [18. 변수의 유효범위(scope)](docs/01.js_basic.md#18-변수의-유효범위scope)
+  + 💻 [01-38 전역 변수와 지역 변수](workspace-ins/ch01/ex01-38.js)
+- 📜 [19 ES6 - 변수 선언문](docs/01.js_basic.md#19-es6---변수-선언문)
+  + 💻 [01-39 변수 선언문 var, let, const](workspace-ins/ch01/ex01-39.js)
+
+#### 오후(3시간)
+- 📜 [20 ES6 - Template literals](docs/01.js_basic.md#20-es6---template-literals)
+  + 💻 [01-40 Template literals](workspace-ins/ch01/ex01-40.js)
+- 📜 [21 ES6 - 구조 분해 할당(Destructuring assignment)](docs/01.js_basic.md#21-es6---구조-분해-할당destructuring-assignment)
+  + 💻 [01-41 구조 분해 할당(Destructuring assignment)](workspace-ins/ch01/ex01-41.js)
+- 📜 [22 ES6 - 기본값 매개변수(Default parameters)](docs/01.js_basic.md#22-es6---기본값-매개변수default-parameters)
+  + 💻 [01-42 기본값 매개변수(Default parameters)](workspace-ins/ch01/ex01-42.js)
+- 📜 [23 ES6 - 나머지 매개변수(Rest parameters)](docs/01.js_basic.md#23-es6---나머지-매개변수rest-parameters)
+  + 💻 [01-43 나머지 매개변수(Rest parameters)](workspace-ins/ch01/ex01-43.js)
+- 📜 [24 ES6 - 전개 구문(Spread syntax)](docs/01.js_basic.md#24-es6---전개-구문spread-syntax)
+  + 💻 [01-44 전개 구문(Spread syntax)](workspace-ins/ch01/ex01-44.js)
+
+</details>
+
+
 </details>
 
 # 개발 환경 구축
