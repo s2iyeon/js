@@ -52,3 +52,5 @@ colorObj.push('white');
 console.log(colorObj);
 printArr(colorObj);
 
+// string은 유사 배열 객체
+printArr('hello');
