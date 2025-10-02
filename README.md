@@ -170,7 +170,6 @@
   + 💻 [01-33 반환값이 있는 함수](workspace-ins/ch01/ex01-33.js)
   + 💻 [01-34 반환값이 있는 함수 - 토스터](workspace-ins/ch01/ex01-34.js)
 - 📜 [17. 참조 타입의 특징](docs/01.js_basic.md#17-참조-타입의-특징)
-  + 💻 [01-37 Call by Value와 Call by Reference 차이](workspace-ins/ch01/ex01-37.js)
 </details>
 
 <details>
