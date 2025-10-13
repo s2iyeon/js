@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      console.log("Hello javascript - 1");
+
+      // load: HTML 코드 파싱이 완료된 후에 발생하는 이벤트
+      window.addEventListener("load", function () {
+        // selector 문법으로 html 요소를 찾을 때
+        var btn = document.querySelector("button");
+        // 버튼에 클릭 이벤트 추가
+        btn.addEventListener("click", function () {
+          console.log("버튼 클릭 - 1");
+        });
+      });
+    </script>
+
+    <script src="ex01-03.js"></script>
+  </head>
+  <body>
+    <h1>Hello javascript -2</h1>
+    <button>클릭</button>
+
+    <script>
+      console.log("Hello javascript - 3");
+      // 버튼에 클릭 이벤트 추가
+      var btn = document.querySelector("button");
+      // selector 문법으로 html 요소를 찾을 때
+      btn.addEventListener("click", function () {
+        console.log("버튼 클릭 - 3");
+      });
+    </script>
+  </body>
+</html>
