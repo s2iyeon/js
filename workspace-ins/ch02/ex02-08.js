@@ -8,14 +8,34 @@
 */
 
 // 전달받은 숫자의 팩토리얼 값을 구해서 반환하는 함수
+/*
+  5! = 5 * 4 * 3 * 2 * 1
+*/
 let f = function factorial(n){
+  let result = 1;
+  for(let i=n; i>0; i--){ // i=5,4,3,2,1
+    result *= i; // 5 * 4 * 3 * 2 * 1
+  }
+  return result;
+};
 
-}
+/*
+  5!
+  = 5 * 4 * 3 * 2 * 1
+  = 5 * 4!
+  = 5 * 4 * 3!
+  = 5 * 4 * 3 * 2!
+  = 5 * 4 * 3 * 2 * 1!
+*/
+f = function factorial(n){
+  if(n === 1) return 1;
+  return n * factorial(n-1);
+};
 
 console.log(f(5));
-console.log(factorial(5));
+// console.log(factorial(5));
 
 // 로또 1등 당첨 확률은?
 // 45!/((45-6)!*6!)
-const result = 0;
+const result = f(45)/(f(45-6)*f(6));
 console.log('로또 1등 당첨 확률은 1/' + result);
