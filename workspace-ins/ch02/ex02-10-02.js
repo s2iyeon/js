@@ -11,17 +11,24 @@ let arr = [10, 20, 30];
 let result = [];
 
 // 각 요소의 제곱값으로 구성된 새로운 배열 생성(for문)
-
+for(let i=0; i<arr.length; i++){
+  result.push(arr[i] * arr[i]); // [100, 400, 900]
+}
 
 // Array.prototype.forEach()
 // 배열의 각 요소를 순회하면서 콜백 함수를 실행
-
+result = [];
+arr.forEach(function(elem, i){ // (10, 0), (20, 1), (30, 2)
+  result.push(elem * elem);
+});
 
 // Array.prototype.map()
 // 배열의 각 요소를 순회하면서 콜백 함수를 실행하고 콜백 함수의 리턴값을 모아서 새로운 배열로 반환
-
+result = arr.map(function(elem, i){
+  return elem * elem; // [100, 400, 900]
+});
 
 // ES6 arrow function
+result = arr.map(elem => elem * elem);
 
-
-console.log(arr);
+console.log(arr, result);
