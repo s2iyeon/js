@@ -5,6 +5,10 @@
     선언 전에 접근하면 에러 발생 (undefined 값도 할당되지 않은 상태)
 */
 
+console.log(a); // undefined
+console.log(b); // 에러 ReferenceError: Cannot access 'b' before initialization
+console.log(c); // 에러 ReferenceError: Cannot access 'c' before initialization
+
 var a = 10; // 호이스팅 단계에서 undefined로 초기화 됨
 let b = 20; // 호이스팅 단계에서 선언만 되고 초기화가 안됨
 const c = 30; // 호이스팅 단계에서 선언만 되고 초기화가 안됨
