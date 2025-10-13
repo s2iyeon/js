@@ -5,6 +5,9 @@
     선언 전에 접근하면 에러 발생 (undefined 값도 할당되지 않은 상태)
 */
 
+console.log(add);
+console.log(add(10, 20)); // TypeError: add is not a function
+
 // 함수 표현식
 var add = function(x, y){
   return x + y;

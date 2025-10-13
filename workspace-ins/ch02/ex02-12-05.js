@@ -7,3 +7,18 @@
     선언 전에 접근하면 에러 발생 (undefined 값도 할당되지 않은 상태)
 */
 
+// 호이스팅 단계
+let add; // undefined로 초기화 되지 않음
+// TDZ(Temporal Dead Zone) ~
+
+// 실행 단계
+console.log(add(10, 20)); // ReferenceError: Cannot access 'add' before initialization
+
+// ~ TDZ
+// 함수 표현식
+add = function(x, y){
+  return x + y;
+};
+
+console.log(add(10, 20));
+
