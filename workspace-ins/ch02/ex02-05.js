@@ -4,6 +4,9 @@
 */
 
 // 함수 선언문
-
+function add(x, y){
+  const result = x + y;
+  return result;
+}
 
 console.log(add(10, 20)); // 30

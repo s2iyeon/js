@@ -10,6 +10,17 @@
 // 함수는 함수의 결과 값으로 반환될 수 있다.
 function f1(){
 	console.log('f1 호출.');
+  return function(){
+    console.log('f2 호출.');
+    return function(){
+      console.log('f3 호출.');
+      return f1;
+    };
+  };
 };
 
-f1();
+f1()()()()()()()()();
+
+const f2 = f1();
+const f3 = f2();
+f3();

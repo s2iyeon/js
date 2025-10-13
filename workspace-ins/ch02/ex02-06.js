@@ -6,5 +6,9 @@
 */
 
 // 함수 표현식(익명 함수)
+const add = function(x, y){
+  const result = x + y;
+  return result;
+};
 
 console.log(add(10, 20));
