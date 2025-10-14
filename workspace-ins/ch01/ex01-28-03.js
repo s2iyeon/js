@@ -37,8 +37,11 @@ const arr = {
     // this.length++;
 
     // 배열의 push 메서드 사용
-    const tmpArr = new Array();
-    tmpArr.push.call(this, color);
+    // const tmpArr = new Array();
+    // tmpArr.push.call(this, color);
+
+    // TODO prototype 단원. 배열의 생성자 함수인 Array의 배열 메서드를 정의하는 속성인 prototype을 사용
+    Array.prototype.push.call(this, color);
   }
 };
 
