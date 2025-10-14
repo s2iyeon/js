@@ -1,8 +1,8 @@
 // ex02-17.js 복사
- 
+
 /*
 * 함수 내부의 this가 상위 Scope의 this를 참조해야 하지 못하고 함수 자신의 this를 참조하는 경우
-  - call을 사용해서 상위 Scope의 this를 내부에 전달
+  - 화살표 함수는 this가 생성되지 않음
 */
 
 var count = 0; // window.count = 0
@@ -12,11 +12,10 @@ const myObj = {
     // 방문자를 한명 증가시킨다.
     this.count++; // this = myObj
 
-    const visit2 = function(){
+    const visit2 = () => {
       this.count++; // this = myObj
     };
-
-    visit2.call(this); // this = myObj
+    visit2();
   },
 };
 
