@@ -15,7 +15,7 @@ const myObj = {
     const visit2 = () => {
       this.count++; // this = myObj
     };
-    visit2(); // this = window
+    visit2();
   },
 };
 

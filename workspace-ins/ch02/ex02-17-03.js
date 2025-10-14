@@ -15,6 +15,7 @@ const myObj = {
     const visit2 = function(){
       this.count++; // this = myObj
     };
+
     visit2.call(this); // this = myObj
   },
 };

@@ -12,6 +12,7 @@ const myObj = {
     const visit2 = function(){
       this.count++; // this = window
     };
+    
     visit2(); // this = window
   },
 };
