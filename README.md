@@ -233,10 +233,12 @@
 <summary><h3>10일차(2025.10.13 월)</h3></summary>
 
 #### 오전(3시간)
-
+- 📜 [1. 참조 타입(Function, 함수)](docs/02.js_function.md#1-참조-타입function-함수)
+- 📜 [2. 일급 객체(First-class object)](docs/02.js_function.md#2-일급-객체first-class-object)
 
 #### 오후(3시간)
-
+- 📜 [3. 함수 생성](docs/02.js_function.md#3-함수-생성)
+- 📜 [4. 호이스팅 (hoisting)](docs/02.js_function.md#4-호이스팅-hoisting)
 
 </details>
 
@@ -244,10 +246,14 @@
 <summary><h3>11일차(2025.10.14 화)</h3></summary>
 
 #### 오전(3시간)
-
+- 📜 [5. 매개변수와 인자의 수](docs/02.js_function.md#5-매개변수와-인자의-수)
+- 📜 [6. 암묵적 매개변수](docs/02.js_function.md#6-암묵적-매개변수)
 
 #### 오후(3시간)
-
+- 📜 [7. 함수 호출 방법](docs/02.js_function.md#7-함수-호출-방법)
+  + 📜 [7.1 함수 호출 방법 1 - 일반 함수로 호출](docs/02.js_function.md#71-함수-호출-방법-1---일반-함수로-호출)
+  + 📜 [7.2 함수 호출 방법 2 - 메서드로 호출](docs/02.js_function.md#72-함수-호출-방법-2---메서드로-호출)
+  + 📜 [7.3 함수 호출 방법 3 - apply(), call()로 호출](docs/02.js_function.md#73-함수-호출-방법-3---apply-call로-호출)
 
 </details>
 
