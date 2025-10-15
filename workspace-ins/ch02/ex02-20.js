@@ -15,19 +15,20 @@ const Score = function(){
 
 // 바로핑은 점수가 각각 100, 90, 80 이다.
 // 라라핑은 점수가 각각 90, 80, 60 이다.
-let baro;
-let rara;
+let baro = new Score(100, 90, 80);
+let rara = new Score(90, 80, 60);
 
 // 두 사람의 총점과 평균을 출력하세요.
-console.log(); // 270 90
-console.log(); // 230 76.666666
+console.log(baro.sum(), baro.avg()); // 270 90
+console.log(rara.sum(), rara.avg()); // 230 76.666666
 
 // 두 사람의 수학점수를 10점 올림
-
+baro.math += 10;
+rara.math += 10;
 
 // 두 사람의 총점과 평균을 출력하세요.
-console.log(); // 280 93.333333
-console.log(); // 240 80
+console.log(baro.sum(), baro.avg()); // 280 93.333333
+console.log(rara.sum(), rara.avg()); // 240 80
 
 console.log(baro);
 console.log(rara);
