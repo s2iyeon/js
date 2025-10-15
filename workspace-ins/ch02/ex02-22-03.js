@@ -69,3 +69,33 @@ console.log('남은 할일이 하나라도 있는가?', hasTodo);
 // Array.prototype.findIndex: 콜백 함수가 전부 true를 리턴하는 경우 true를 반환
 let isAllDone = todoList.every(todoItem => todoItem.done);
 console.log('할일이 모두 완료 되었는가?', isAllDone);
+
+// 모든 할일에 대해서 title만 꺼내서 소문자로 변경
+// Array.prototype.map: 콜백 함수의 리턴값을 모아서 새로운 배열로 반환
+let lowerTitleList = todoList.map(todoItem => {
+  return todoItem.title.toLocaleLowerCase(); // ['javascript 공부', 'react 공부', ...]
+});
+console.log('할일 title(소문자)', lowerTitleList);
+
+// 완료된 할일에 대해서 title만 추출
+let doneTitleList = [];
+
+// 소혜림
+todoList.map(todoItem => {
+  if(todoItem.done) {
+    doneTitleList.push(todoItem.title);
+  }
+});
+
+// 김채희
+doneTitleList = doneList.map(todoItem => {
+  return todoItem.title
+});
+
+// 박지섭
+doneTitleList = todoList
+  .filter((todoItem) => todoItem.done)
+  .map((todoItem) => todoItem.title);
+
+doneTitleList = todoList.filter(todoItem => todoItem.done).map(todoItem => todoItem.title);
+console.log('완료된 할일 title', doneTitleList); // ['JavaScript 공부', 'Final 프로젝트']
