@@ -34,4 +34,4 @@ haru.setName('이틀');
 console.log(haru.getName());	// 이틀
 
 console.log(haru.getName == namu.getName);	// false
-console.log(haru.setName == namu.setName);	// false
+console.log(haru.setName == namu.setName);	// false 
