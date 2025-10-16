@@ -31,3 +31,10 @@ console.log('s1 총점', s1.sum()); // 170
 console.log('s1 평균', s1.avg()); // 85
 console.log('s2 총점', s2.sum()); // 120
 console.log('s2 평균', s2.avg()); // 60
+
+console.log(s1.sum === s2.sum); // false
+console.log(s1.avg === s2.avg); // true
+
+// Object.prototype.hasOwnProperty()
+console.log(s1.hasOwnProperty('sum')); // true
+console.log(s1.hasOwnProperty('avg')); // false
