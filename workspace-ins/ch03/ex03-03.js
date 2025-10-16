@@ -11,8 +11,15 @@
  * @param {number} eng 영어 점수
  */
 function HighSchool(kor, eng){
-
+  this.kor = kor;
+  this.eng = eng;
 }
+HighSchool.prototype.sum = function(){
+  return this.kor + this.eng;
+};
+HighSchool.prototype.avg = function(){
+  return Math.round(this.sum() / 2);
+};
 
 const h1 = new HighSchool(100, 91);
 console.log('h1', h1.kor, h1.eng); // 100, 91
@@ -25,14 +32,41 @@ console.log('h1 평균', h1.avg()); // 95.5
  * @param {number} eng 영어 점수
  */
 function College(kor, eng){
-
+  this.kor = kor;
+  this.eng = eng;
 }
+// College.prototype.sum = function(){
+//   return this.kor + this.eng;
+// };
+// College.prototype.avg = function(){
+//   return Math.round(this.sum() / 2);
+// };
 
 // College가 HighSchool을 상속 받는다.(sum, avg 메서드 상속)
-
+College.prototype = new HighSchool();
 
 // College에 학점 계산 메서드 추가(grade 메서드 추가)
+College.prototype.grade = function(){
+  const avg = this.avg();
+  let level = 'F';
 
+  // 평균 90점 이상 A
+  // 평균 80점 이상 B
+  // 평균 70점 이상 C
+  // 평균 60점 이상 D
+  // 평균 60점 미만 F
+  if(avg >= 90){
+    level = 'A';
+  }else if(avg >= 80){
+    level = 'B';
+  }else if(avg >= 70){
+    level = 'C';
+  }else if(avg >= 60){
+    level = 'D';
+  }
+
+  return level;
+};
 
 const c1 = new College(80, 71);
 console.log('c1', c1.kor, c1.eng); // 80, 71
