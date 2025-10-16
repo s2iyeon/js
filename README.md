@@ -4,6 +4,7 @@
 ## 목차
 ### [1. 자바스크립트 기초 문법](docs/01.js_basic.md)
 ### [2. 자바스크립트 함수](docs/02.js_function.md)
+### [3. 프로토타입, 상속과 클래스](docs/03.js_prototype.md)
 
 # 수업 진도
 
@@ -261,10 +262,14 @@
 <summary><h3>12일차(2025.10.15 수)</h3></summary>
 
 #### 오전(3시간)
-
+- 📜 [7. 함수 호출 방법](docs/02.js_function.md#7-함수-호출-방법)
+  + 📜 [7.4 함수 호출 방법 4 - 생성자 함수로 호출](docs/02.js_function.md#74-함수-호출-방법-4---생성자-함수로-호출)
 
 #### 오후(3시간)
-
+- 📜 [8. 익명 함수 (Anonymous function)](docs/02.js_function.md#8-익명-함수-anonymous-function)
+- 📜 [9. 콜백 함수 (Callback function)](docs/02.js_function.md#9-콜백-함수-callback-function)
+- 📜 [10. 순수 함수 (Pure Function)](docs/02.js_function.md#10-순수-함수-pure-function)
+- 📜 [11. 고차 함수 (Higher-Order Function)](docs/02.js_function.md#11-고차-함수-higher-order-function)
 
 </details>
 
