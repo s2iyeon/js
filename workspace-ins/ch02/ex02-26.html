@@ -12,7 +12,33 @@
       for(var i=0; i<buttons.length; i++){
         const btn = buttons[i];
         btn.addEventListener('click', function(){
-          
+          console.log(`${buttons.length}개의 버튼중 ${i+1}번째 버튼 클릭`);
+        });
+      }
+
+      // IIFE 패턴
+      for(var i=0; i<buttons.length; i++){
+        const btn = buttons[i];
+        (function(n){
+          btn.addEventListener('click', function(){
+            console.log(`IIFE - ${buttons.length}개의 버튼중 ${n+1}번째 버튼 클릭`);
+          });
+        })(i);
+      }
+
+      // NodeList는 유사 배열 객체지만 forEach 메서드가 있음
+      // forEach
+      buttons.forEach(function(btn, i){
+        btn.addEventListener('click', function(){
+          console.log(`forEach - ${buttons.length}개의 버튼중 ${i+1}번째 버튼 클릭`);
+        });
+      });
+
+      // ES6 let
+      for(let i=0; i<buttons.length; i++){
+        const btn = buttons[i];
+        btn.addEventListener('click', function(){
+          console.log(`let - ${buttons.length}개의 버튼중 ${i+1}번째 버튼 클릭`);
         });
       }
 
@@ -31,6 +57,5 @@
   <button>버튼1</button>
   <button>버튼2</button>
   <button>버튼3</button>
-  <button>버튼4</button>
 </body>
 </html>
