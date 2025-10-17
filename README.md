@@ -5,6 +5,7 @@
 ### [1. 자바스크립트 기초 문법](docs/01.js_basic.md)
 ### [2. 자바스크립트 함수](docs/02.js_function.md)
 ### [3. 프로토타입, 상속과 클래스](docs/03.js_prototype.md)
+### [4. 클로저](docs/04.js_closure.md)
 
 # 수업 진도
 
@@ -277,10 +278,20 @@
 <summary><h3>13일차(2025.10.16 목)</h3></summary>
 
 #### 오전(3시간)
-
+- 📜 [12. 고차 함수 사용 예 - 메모이제이션](docs/02.js_function.md#12-고차-함수-사용-예---메모이제이션)
+- 📜 [1. 프로토타입이란?](docs/03.js_prototype.md#1-프로토타입이란)
+- 📜 [2. 프로토타입과 생성자](docs/03.js_prototype.md#2-프로토타입과-생성자)
+- 📜 [3. 인스턴스 생성과 프로토타입](docs/03.js_prototype.md#3-인스턴스-생성과-프로토타입)
+- 📜 [4. 객체의 프로퍼티 참조](docs/03.js_prototype.md#4-객체의-프로퍼티-참조)
 
 #### 오후(3시간)
-
+- 📜 [5. Object](docs/03.js_prototype.md#5-object)
+- 📜 [6. typeof 연산자](docs/03.js_prototype.md#6-typeof-연산자)
+- 📜 [7. instanceof 연산자](docs/03.js_prototype.md#7-instanceof-연산자)
+- 📜 [8. 상속](docs/03.js_prototype.md#8-상속)
+- 📜 [9. 클래스 정의](docs/03.js_prototype.md#9-클래스-정의)
+- 📜 [10. 인스턴스의 속성 정의](docs/03.js_prototype.md#10-인스턴스의-속성-정의)
+- 📜 [11. 인스턴스의 메서드 정의](docs/03.js_prototype.md#11-인스턴스의-메서드-정의)
 
 </details>
 
