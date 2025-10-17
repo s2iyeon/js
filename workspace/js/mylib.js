@@ -1,5 +1,14 @@
 const mylib = {};
 
+// 함수를 Partial application으로 만들어주는 partial 메서드 추가
+Function.prototype.partial = function(...preArgs){ // [100]
+  const fn = this; // sum
+  return function(...nextArgs){ // [20]
+    const args = [...preArgs, ...nextArgs]; // [100, 20]
+    return fn(...args); // sum(100, 20)
+  };
+};
+
 // Child가 Parent를 상속받는다.
 mylib.inherite = function(Parent, Child){
   // const F = new Function();
