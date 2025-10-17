@@ -24,6 +24,9 @@ let currySum = function(a){
 currySum = (a) => (b) => (c) => a + b + c;
 currySum = a => b => c => a + b + c;
 
+// lodash의 _.curry() 함수 사용
+currySum = _.curry(sum);
+
 console.log(sum(10, 20, 30));
 console.log(currySum(10)(20)(30));
 
