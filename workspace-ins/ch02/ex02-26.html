@@ -4,7 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Javascript Lab</title>
-  
+  <script>
+    window.addEventListener('DOMContentLoaded', function(){
+      // NodeList 인스턴스(유사 배열 객체)
+      const buttons = document.querySelectorAll('button');
+
+      for(var i=0; i<buttons.length; i++){
+        const btn = buttons[i];
+        btn.addEventListener('click', function(){
+          
+        });
+      }
+
+    });
+  </script>
 </head>
 <body>
   <h1>반복문에서의 블록 스코프 문제</h1>
@@ -18,5 +31,6 @@
   <button>버튼1</button>
   <button>버튼2</button>
   <button>버튼3</button>
+  <button>버튼4</button>
 </body>
 </html>
