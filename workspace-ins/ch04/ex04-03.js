@@ -7,3 +7,24 @@
   - 마지막 인자가 입력될 때까지 함수의 실행 타이밍을 조절할 수 있음
 */
 
+// 일반 함수
+function sum(a, b, c){
+  return a + b + c;
+}
+
+// 커링 함수
+let currySum = function(a){
+  return function(b){
+    return function(c){
+      return a + b + c;
+    };
+  };
+};
+
+currySum = (a) => (b) => (c) => a + b + c;
+currySum = a => b => c => a + b + c;
+
+console.log(sum(10, 20, 30));
+console.log(currySum(10)(20)(30));
+
+
