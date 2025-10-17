@@ -283,9 +283,9 @@
 - 📜 [2. 프로토타입과 생성자](docs/03.js_prototype.md#2-프로토타입과-생성자)
 - 📜 [3. 인스턴스 생성과 프로토타입](docs/03.js_prototype.md#3-인스턴스-생성과-프로토타입)
 - 📜 [4. 객체의 프로퍼티 참조](docs/03.js_prototype.md#4-객체의-프로퍼티-참조)
+- 📜 [5. Object](docs/03.js_prototype.md#5-object)
 
 #### 오후(3시간)
-- 📜 [5. Object](docs/03.js_prototype.md#5-object)
 - 📜 [6. typeof 연산자](docs/03.js_prototype.md#6-typeof-연산자)
 - 📜 [7. instanceof 연산자](docs/03.js_prototype.md#7-instanceof-연산자)
 - 📜 [8. 상속](docs/03.js_prototype.md#8-상속)
