@@ -6,6 +6,7 @@
 ### [2. 자바스크립트 함수](docs/02.js_function.md)
 ### [3. 프로토타입, 상속과 클래스](docs/03.js_prototype.md)
 ### [4. 클로저](docs/04.js_closure.md)
+### [5. 웹 브라우저 프로그래밍](docs/05.js_web.md#웹-브라우저-프로그래밍)
 
 # 수업 진도
 
