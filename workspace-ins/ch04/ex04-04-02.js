@@ -14,10 +14,10 @@ log('file', 'ERROR', 'error message 2');
 
 // lodash 라이브러리 사용
 const consoleWarn = _.partial(log, 'console', 'WARN');
-consoleWarn('lodash warn message 1');
-consoleWarn('lodash warn message 2');
+consoleWarn('lodash warn message 1'); // log('console', 'WARN', 'lodash warn message 1')
+consoleWarn('lodash warn message 2'); // log('console', 'WARN', 'lodash warn message 2')
 
 // mylib.js
 const fileError = log.partial('file', 'ERROR');
-fileError('mylib error message 1');
-fileError('mylib error message 2');
+fileError('mylib error message 1'); // log('file', 'ERROR', 'mylib error message 1')
+fileError('mylib error message 2'); // log('file', 'ERROR', 'mylib error message 2')
