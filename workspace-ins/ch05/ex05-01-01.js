@@ -7,9 +7,29 @@
 */
 
 // id가 buy-list인 요소를 찾아서 반환
+const buyList = document.getElementById('buy-list');
 
 // getElementsByTagName 사용: 모든 li 태그를 배열로 가져온 후 첫 번째 요소 선택
+// const liList = document.getElementsByTagName('li');
+const liList = buyList.getElementsByTagName('li');
+const firstLi = liList[0]; // 첫번째 li 요소 선택
 
 // firstChild를 사용하여 텍스트 노드 선택 (요소 노드의 실제 텍스트 내용)
+// const firstTextNode = firstLi.firstChild;
+// console.log('첫번째 항목', firstTextNode.nodeValue);
+
+// innerHTML 속성 사용
+// console.log('첫번째 항목', firstLi.innerHTML);
+
+// outerHTML 속성 사용
+// console.log('첫번째 항목', firstLi.outerHTML);
+
+// textContent 속성 사용
+console.log('첫번째 항목', firstLi.textContent);
+
+
 
 // nodeValue를 사용하여 텍스트 내용 수정
+// firstTextNode.nodeValue = '양파';
+// firstLi.innerHTML = '과자';
+firstLi.outerHTML = '<li>과자</li>';
