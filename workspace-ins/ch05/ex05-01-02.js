@@ -15,4 +15,7 @@ const firstTxt = firstLi.firstChild;
 console.log('첫번째 항목', firstTxt.nodeValue);
 
 // lastElementChild를 사용하여 마지막 li 요소의 텍스트 내용 출력
-
+// const lastLi = buyList.children[2];
+const lastLi = buyList.lastElementChild;
+const lastTxt = lastLi.firstChild;
+console.log('마지막 항목', lastTxt.nodeValue);
