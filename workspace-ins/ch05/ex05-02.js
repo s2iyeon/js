@@ -9,9 +9,12 @@ const countSpan = document.querySelector('#container > span');
 btn.addEventListener('click', plus);
 
 function plus(){
-  const currVal = parseInt(countSpan.lastChild.nodeValue);
-  const nextVal = currVal + 1;
-  countSpan.firstChild.nodeValue = nextVal;
+  // const currVal = parseInt(countSpan.lastChild.nodeValue);
+  // const nextVal = currVal + 1;
+  // countSpan.firstChild.nodeValue = nextVal;
+  
+  // countSpan.textContent = parseInt(countSpan.textContent) + 1;
+  countSpan.textContent++;
 }
 
 setTimeout(function(){
