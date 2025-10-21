@@ -106,4 +106,48 @@ function getTodoItemElem(item){
   return liElem;
 }
 
+/**
+ * 추가 버튼 클릭 시 실행되는 이벤트 핸들러
+ * 입력창의 값을 가져와 새로운 Todo 아이템을 추가
+ */
+function add(){
+  const inputElem = document.querySelector('.todoinput > input');
+  console.log(inputElem.value); // HTML 표준 속성은 DOM 객체의 동일한 속성으로 접근 가능
+  if(inputElem.value.trim() !== ''){
+    addItem(inputElem.value.trim());
+    inputElem.value = '';
+    inputElem.focus();
+  }
+}
+
+/**
+ * 새로운 Todo 아이템을 목록에 추가하는 함수
+ * @param {string} title - 할일 제목
+ */
+function addItem(title){
+  const todoListUl = document.querySelector('.todolist');
+  const item = {
+    id: todoListUl.children.length + 1,
+    title,
+    done: false
+  };
+
+  const todoLi = getTodoItemElem(item);
+  // todoListUl.appendChild(todoLi);
+  todoListUl.insertBefore(todoLi, todoListUl.firstChild);
+}
+
+/**
+ * 입력창에서 키보드 입력 시 실행되는 이벤트 핸들러
+ * Enter 키 입력 시 추가 기능 실행
+ * @param {KeyboardEvent} event - 키보드 이벤트 객체
+ */
+function handleKeyup(event){
+  if(event.key === 'Enter') add();
+}
+
+// '추가' 버튼 클릭
+document.querySelector('.todoinput > button').addEventListener('click', add);
+// input 요소에 키보드 입력
+document.querySelector('.todoinput > input').addEventListener('keyup', handleKeyup);
 showList();
