@@ -19,13 +19,13 @@
 #### 오전(3시간)
 - 📜 JS 레포지토리 README: <https://github.com/FEBC-15/js>
   + [💻 개발환경 구축](?tab=readme-ov-file#개발-환경-구축)
-- 📜 [1. 자바스크립트란?](docs/01.js_basic.md#1-자바스크립트란)
-- 📜 [2. 자바스크립트 역사](docs/01.js_basic.md#2-자바스크립트-역사)
+- 📜 1장 기초 문법 - [1. 자바스크립트란?](docs/01.js_basic.md#1-자바스크립트란)
+- 📜 1장 기초 문법 - [2. 자바스크립트 역사](docs/01.js_basic.md#2-자바스크립트-역사)
 
 #### 오후(5시간)
-- 📜 [3. 자바스크립트로 할 수 있는 일](docs/01.js_basic.md#3-자바스크립트로-할-수-있는-일)
-- 📜 [4. 개발 환경 구성](docs/01.js_basic.md#4-개발-환경-구성)
-- 📜 [5. 자바스크립트 코드의 위치](docs/01.js_basic.md#5-자바스크립트-코드의-위치)
+- 📜 1장 기초 문법 - [3. 자바스크립트로 할 수 있는 일](docs/01.js_basic.md#3-자바스크립트로-할-수-있는-일)
+- 📜 1장 기초 문법 - [4. 개발 환경 구성](docs/01.js_basic.md#4-개발-환경-구성)
+- 📜 1장 기초 문법 - [5. 자바스크립트 코드의 위치](docs/01.js_basic.md#5-자바스크립트-코드의-위치)
   + 💻 [01-01 인라인 자바스크립트](./workspace-ins/ch01/ex01-01.html)
   + 💻 [01-02 외부 자바스크립트 파일 로드](workspace-ins/ch01/ex01-02.html)
   + 💻 [01-03 웹 페이지 파싱 순서](workspace-ins/ch01/ex01-03.html)
@@ -36,18 +36,18 @@
 <summary><h3>2일차(2025.09.23 화)</h3></summary>
 
 #### 오전(3시간)
-- 📜 [6. 명령문과 주석](docs/01.js_basic.md#6-명령문과-주석)
+- 📜 1장 기초 문법 - [6. 명령문과 주석](docs/01.js_basic.md#6-명령문과-주석)
   + 💻 [01-04 명령문과 주석](workspace-ins/ch01/ex01-04.js)
-- 📜 [7. 변수(variable)](docs/01.js_basic.md#7-변수variable)
+- 📜 1장 기초 문법 - [7. 변수(variable)](docs/01.js_basic.md#7-변수variable)
   + 💻 [01-05 변수 선언](workspace-ins/ch01/ex01-05.js)
 
 #### 오후(3시간)
-- 📜 [8. 리터럴(literal)](docs/01.js_basic.md#8-리터럴literal)
-- 📜 [9. 데이터 타입](docs/01.js_basic.md#9-데이터-타입)
-- 📜 [10. 원시 타입(Primitive type)](docs/01.js_basic.md#10-원시-타입primitive-type)
+- 📜 1장 기초 문법 - [8. 리터럴(literal)](docs/01.js_basic.md#8-리터럴literal)
+- 📜 1장 기초 문법 - [9. 데이터 타입](docs/01.js_basic.md#9-데이터-타입)
+- 📜 1장 기초 문법 - [10. 원시 타입(Primitive type)](docs/01.js_basic.md#10-원시-타입primitive-type)
   + 💻 [01-06 기본 데이터 타입 - Number, String, Boolean, undefined, null](workspace-ins/ch01/ex01-06.js)
   + 💻 [01-07 기본 데이터 타입 - BigInt](workspace-ins/ch01/ex01-07.js)
-- 📜 [11. 연산자](docs/01.js_basic.md#11-연산자)
+- 📜 1장 기초 문법 - [11. 연산자](docs/01.js_basic.md#11-연산자)
   + 💻 [01-08 산술 연산자 +, -, *, /, %, **](workspace-ins/ch01/ex01-08.js)
   + 💻 [01-08-02 산술 연산자 - 산술 연산자를 사용하여 계산된 결과를 출력](workspace-ins/ch01/ex01-08-02.js)
   + 💻 [01-09 대입 연산자 =, +=, -=, *=, /=, %=, **=](workspace-ins/ch01/ex01-09.js)
@@ -60,7 +60,7 @@
 <summary><h3>3일차(2025.09.24 수)</h3></summary>
 
 #### 오전(3시간)
-- 📜 [11. 연산자](docs/01.js_basic.md#11-연산자)
+- 📜 1장 기초 문법 - [11. 연산자](docs/01.js_basic.md#11-연산자)
   + 💻 [01-11 비교 연산자 >, >=, <, <=, ==, !=, ===, !==](workspace-ins/ch01/ex01-11.js)
   + 💻 [01-12 동등 연산자와 일치 연산자의 차이](workspace-ins/ch01/ex01-12.js)
   + 💻 [01-13 논리 연산자 &&, ||, !](workspace-ins/ch01/ex01-13.js)
@@ -68,7 +68,7 @@
   + 💻 [01-15 연산자 우선순위](workspace-ins/ch01/ex01-15.js)
 
 #### 오후(3시간)
-- 📜 [12. 조건문](docs/01.js_basic.md#12-조건문)
+- 📜 1장 기초 문법 - [12. 조건문](docs/01.js_basic.md#12-조건문)
   + 💻 [01-16 if문](workspace-ins/ch01/ex01-16.js)
   + 💻 [01-16-02 if문을 사용하여 학점 출력](workspace-ins/ch01/ex01-16-02.js)
   + 💻 [01-16-03 if문을 이용하여 사용자와 로그인 상태 출력](workspace-ins/ch01/ex01-16-03.js)
@@ -82,7 +82,7 @@
 <summary><h3>4일차(2025.09.25 목)</h3></summary>
 
 #### 오전(3시간)
-- 📜 [12. 조건문](docs/01.js_basic.md#12-조건문)
+- 📜 1장 기초 문법 - [12. 조건문](docs/01.js_basic.md#12-조건문)
   + 💻 [01-17-02 if-else문을 사용하여 학점 출력](workspace-ins/ch01/ex01-17-02.js)
   + 💻 [01-17-03 if-else문을 사용하여 사용자와 로그인 상태 출력](workspace-ins/ch01/ex01-17-03.js)
   + 💻 [01-18 if-else if문](workspace-ins/ch01/ex01-18.js)
@@ -90,7 +90,7 @@
   + 💻 [01-18-03 if-else if문을 사용하여 사용자와 로그인 상태 출력](workspace-ins/ch01/ex01-18-03.js)
 
 #### 오후(3시간)
-- 📜 [12. 조건문](docs/01.js_basic.md#12-조건문)
+- 📜 1장 기초 문법 - [12. 조건문](docs/01.js_basic.md#12-조건문)
   + 💻 [01-18-04 if-else if문을 사용하여 계산기, 요일, 계절 출력](workspace-ins/ch01/ex01-18-04.js)
   + 💻 [01-18-05 if-else if문을 사용하여 정보처리 기사 필기 시험 결과 출력](workspace-ins/ch01/ex01-18-05.js)
   + 💻 [01-19 switch문을 사용하여 계산기, 요일, 계절 출력](workspace-ins/ch01/ex01-19.js)
@@ -102,7 +102,7 @@
 <summary><h3>5일차(2025.09.26 금)</h3></summary>
 
 #### 오전(3시간)
-- 📜 [13. 반복문](docs/01.js_basic.md#13-반복문)
+- 📜 1장 기초 문법 - [13. 반복문](docs/01.js_basic.md#13-반복문)
   + 💻 [01-20 while문](workspace-ins/ch01/ex01-20.js)
   + 💻 [01-20-02 while문을 사용하여 홀수/짝수 합계 구하기](workspace-ins/ch01/ex01-20-02.js)
   + 💻 [01-20-03 while문을 사용하여 쌀알 모으기](workspace-ins/ch01/ex01-20-03.js)
@@ -110,16 +110,17 @@
   + 💻 [01-21 for문](workspace-ins/ch01/ex01-21.js)
 
 #### 오후(3시간)
-- 📜 [13. 반복문](docs/01.js_basic.md#13-반복문)
+- 📜 1장 기초 문법 - [13. 반복문](docs/01.js_basic.md#13-반복문)
   + 💻 [01-21-02 for문을 사용하여 별찍기](workspace-ins/ch01/ex01-21-02.js)
   + 💻 [01-21-03 for문을 이용해서 구구단 작성](workspace-ins/ch01/ex01-21-03.js)
   + 💻 [01-22 break, continue](workspace-ins/ch01/ex01-22.js)
   + ✍️ 과제: [01-21-02 for문을 사용하여 별찍기](workspace-ins/ch01/ex01-21-02.js)
   + ✍️ 과제: [01-21-03 for문을 이용해서 구구단 작성](workspace-ins/ch01/ex01-21-03.js)
-- 📜 [14. 참조 타입(Object, 객체)](docs/01.js_basic.md#14-참조-타입object-객체)
+- 📜 1장 기초 문법 - [14. 참조 타입(Object, 객체)](docs/01.js_basic.md#14-참조-타입object-객체)
   + 💻 [01-23 new Object() - 생성자 함수로 객체 생성](workspace-ins/ch01/ex01-23.js)
 
 </details>
+
 </details>
 
 <details>
@@ -129,15 +130,15 @@
 <summary><h3>6일차(2025.09.29 월)</h3></summary>
 
 #### 오전(3시간)
-- 📜 [13. 반복문](docs/01.js_basic.md#13-반복문)
+- 📜 1장 기초 문법 - [13. 반복문](docs/01.js_basic.md#13-반복문)
   + ✍️ 과제 풀이: [01-21-02 for문을 사용하여 별찍기](workspace-ins/ch01/ex01-21-02.js)
   + ✍️ 과제 풀이: [01-21-03 for문을 이용해서 구구단 작성](workspace-ins/ch01/ex01-21-03.js)
-- 📜 [14. 참조 타입(Object, 객체)](docs/01.js_basic.md#14-참조-타입object-객체)
+- 📜 1장 기초 문법 - [14. 참조 타입(Object, 객체)](docs/01.js_basic.md#14-참조-타입object-객체)
   + 💻 [01-23 new Object() - 생성자 함수로 객체 생성](workspace-ins/ch01/ex01-23.js)
   + 💻 [01-23-02 new Object() - 국어, 영어, 수학 총점과 평균 출력](workspace-ins/ch01/ex01-23-02.js)
 
 #### 오후(3시간)
-- 📜 [14. 참조 타입(Object, 객체)](docs/01.js_basic.md#14-참조-타입object-객체)
+- 📜 1장 기초 문법 - [14. 참조 타입(Object, 객체)](docs/01.js_basic.md#14-참조-타입object-객체)
   + 💻 [01-24 JSON 표기법 - 리터럴 방식으로 객체 생성](workspace-ins/ch01/ex01-24.js)
   + 💻 [01-24-02 JSON 표기법 - 국어, 영어, 수학 총점과 평균 출력](workspace-ins/ch01/ex01-24-02.js)
   + 💻 [01-25 객체의 속성 관리](workspace-ins/ch01/ex01-25.js)
@@ -148,12 +149,12 @@
 <summary><h3>7일차(2025.09.30 화)</h3></summary>
 
 #### 오전(3시간)
-- 📜 [15. 참조 타입(Array, 배열)](docs/01.js_basic.md#15-참조-타입array-배열)
+- 📜 1장 기초 문법 - [15. 참조 타입(Array, 배열)](docs/01.js_basic.md#15-참조-타입array-배열)
   + 💻 [01-26 배열 생성, 읽기, 쓰기](workspace-ins/ch01/ex01-26.js)
   + 💻 [01-27 모든 요소 읽기 1 - for 루프, for...of, for...in](workspace-ins/ch01/ex01-27.js)
 
 #### 오후(3시간)
-- 📜 [15. 참조 타입(Array, 배열)](docs/01.js_basic.md#15-참조-타입array-배열)
+- 📜 1장 기초 문법 - [15. 참조 타입(Array, 배열)](docs/01.js_basic.md#15-참조-타입array-배열)
   + 💻 [01-27-02 배열 요소의 합계, 홀수의 합계, 짝수의 합계를 출력](workspace-ins/ch01/ex01-27-02.js)
   + 💻 [01-28 유사 배열 객체](workspace-ins/ch01/ex01-28.js)
 </details>
@@ -162,41 +163,41 @@
 <summary><h3>8일차(2025.10.01 수)</h3></summary>
 
 #### 오전(3시간)
-- 📜 [15. 참조 타입(Array, 배열)](docs/01.js_basic.md#15-참조-타입array-배열)
+- 📜 1장 기초 문법 - [15. 참조 타입(Array, 배열)](docs/01.js_basic.md#15-참조-타입array-배열)
   + 💻 [01-29 2차원 배열](workspace-ins/ch01/ex01-29.js)
-- 📜 [16. 참조 타입(Function, 함수)](docs/01.js_basic.md#16-참조-타입function-함수)
+- 📜 1장 기초 문법 - [16. 참조 타입(Function, 함수)](docs/01.js_basic.md#16-참조-타입function-함수)
   + 💻 [01-30 기본 함수](workspace-ins/ch01/ex01-30.js)
   + 💻 [01-31 매개변수를 가진 함수](workspace-ins/ch01/ex01-31.js)
 
 #### 오후(3시간)
-- 📜 [16. 참조 타입(Function, 함수)](docs/01.js_basic.md#16-참조-타입function-함수)
+- 📜 1장 기초 문법 - [16. 참조 타입(Function, 함수)](docs/01.js_basic.md#16-참조-타입function-함수)
   + 💻 [01-32 매개변수를 가진 함수 - 도어락](workspace-ins/ch01/ex01-32.js)
   + 💻 [01-33 반환값이 있는 함수](workspace-ins/ch01/ex01-33.js)
   + 💻 [01-34 반환값이 있는 함수 - 토스터](workspace-ins/ch01/ex01-34.js)
-- 📜 [17. 참조 타입의 특징](docs/01.js_basic.md#17-참조-타입의-특징)
+- 📜 1장 기초 문법 - [17. 참조 타입의 특징](docs/01.js_basic.md#17-참조-타입의-특징)
 </details>
 
 <details>
 <summary><h3>9일차(2025.10.02 목)</h3></summary>
 
 #### 오전(3시간)
-- 📜 [17. 참조 타입의 특징](docs/01.js_basic.md#17-참조-타입의-특징)
+- 📜 1장 기초 문법 - [17. 참조 타입의 특징](docs/01.js_basic.md#17-참조-타입의-특징)
   + 💻 [01-37 Call by Value와 Call by Reference 차이](workspace-ins/ch01/ex01-37.js)
-- 📜 [18. 변수의 유효범위(scope)](docs/01.js_basic.md#18-변수의-유효범위scope)
+- 📜 1장 기초 문법 - [18. 변수의 유효범위(scope)](docs/01.js_basic.md#18-변수의-유효범위scope)
   + 💻 [01-38 전역 변수와 지역 변수](workspace-ins/ch01/ex01-38.js)
-- 📜 [19 ES6 - 변수 선언문](docs/01.js_basic.md#19-es6---변수-선언문)
+- 📜 1장 기초 문법 - [19 ES6 - 변수 선언문](docs/01.js_basic.md#19-es6---변수-선언문)
   + 💻 [01-39 변수 선언문 var, let, const](workspace-ins/ch01/ex01-39.js)
 
 #### 오후(3시간)
-- 📜 [20 ES6 - Template literals](docs/01.js_basic.md#20-es6---template-literals)
+- 📜 1장 기초 문법 - [20 ES6 - Template literals](docs/01.js_basic.md#20-es6---template-literals)
   + 💻 [01-40 Template literals](workspace-ins/ch01/ex01-40.js)
-- 📜 [21 ES6 - 구조 분해 할당(Destructuring assignment)](docs/01.js_basic.md#21-es6---구조-분해-할당destructuring-assignment)
+- 📜 1장 기초 문법 - [21 ES6 - 구조 분해 할당(Destructuring assignment)](docs/01.js_basic.md#21-es6---구조-분해-할당destructuring-assignment)
   + 💻 [01-41 구조 분해 할당(Destructuring assignment)](workspace-ins/ch01/ex01-41.js)
-- 📜 [22 ES6 - 기본값 매개변수(Default parameters)](docs/01.js_basic.md#22-es6---기본값-매개변수default-parameters)
+- 📜 1장 기초 문법 - [22 ES6 - 기본값 매개변수(Default parameters)](docs/01.js_basic.md#22-es6---기본값-매개변수default-parameters)
   + 💻 [01-42 기본값 매개변수(Default parameters)](workspace-ins/ch01/ex01-42.js)
-- 📜 [23 ES6 - 나머지 매개변수(Rest parameters)](docs/01.js_basic.md#23-es6---나머지-매개변수rest-parameters)
+- 📜 1장 기초 문법 - [23 ES6 - 나머지 매개변수(Rest parameters)](docs/01.js_basic.md#23-es6---나머지-매개변수rest-parameters)
   + 💻 [01-43 나머지 매개변수(Rest parameters)](workspace-ins/ch01/ex01-43.js)
-- 📜 [24 ES6 - 전개 구문(Spread syntax)](docs/01.js_basic.md#24-es6---전개-구문spread-syntax)
+- 📜 1장 기초 문법 - [24 ES6 - 전개 구문(Spread syntax)](docs/01.js_basic.md#24-es6---전개-구문spread-syntax)
   + 💻 [01-44 전개 구문(Spread syntax)](workspace-ins/ch01/ex01-44.js)
 
 #### 추석 연휴에 할 일
@@ -236,12 +237,12 @@
 <summary><h3>10일차(2025.10.13 월)</h3></summary>
 
 #### 오전(3시간)
-- 📜 [1. 참조 타입(Function, 함수)](docs/02.js_function.md#1-참조-타입function-함수)
-- 📜 [2. 일급 객체(First-class object)](docs/02.js_function.md#2-일급-객체first-class-object)
+- 📜 2장 함수 - [1. 참조 타입(Function, 함수)](docs/02.js_function.md#1-참조-타입function-함수)
+- 📜 2장 함수 - [2. 일급 객체(First-class object)](docs/02.js_function.md#2-일급-객체first-class-object)
 
 #### 오후(3시간)
-- 📜 [3. 함수 생성](docs/02.js_function.md#3-함수-생성)
-- 📜 [4. 호이스팅 (hoisting)](docs/02.js_function.md#4-호이스팅-hoisting)
+- 📜 2장 함수 - [3. 함수 생성](docs/02.js_function.md#3-함수-생성)
+- 📜 2장 함수 - [4. 호이스팅 (hoisting)](docs/02.js_function.md#4-호이스팅-hoisting)
 
 </details>
 
@@ -249,11 +250,11 @@
 <summary><h3>11일차(2025.10.14 화)</h3></summary>
 
 #### 오전(3시간)
-- 📜 [5. 매개변수와 인자의 수](docs/02.js_function.md#5-매개변수와-인자의-수)
-- 📜 [6. 암묵적 매개변수](docs/02.js_function.md#6-암묵적-매개변수)
+- 📜 2장 함수 - [5. 매개변수와 인자의 수](docs/02.js_function.md#5-매개변수와-인자의-수)
+- 📜 2장 함수 - [6. 암묵적 매개변수](docs/02.js_function.md#6-암묵적-매개변수)
 
 #### 오후(3시간)
-- 📜 [7. 함수 호출 방법](docs/02.js_function.md#7-함수-호출-방법)
+- 📜 2장 함수 - [7. 함수 호출 방법](docs/02.js_function.md#7-함수-호출-방법)
   + 📜 [7.1 함수 호출 방법 1 - 일반 함수로 호출](docs/02.js_function.md#71-함수-호출-방법-1---일반-함수로-호출)
   + 📜 [7.2 함수 호출 방법 2 - 메서드로 호출](docs/02.js_function.md#72-함수-호출-방법-2---메서드로-호출)
   + 📜 [7.3 함수 호출 방법 3 - apply(), call()로 호출](docs/02.js_function.md#73-함수-호출-방법-3---apply-call로-호출)
@@ -264,14 +265,14 @@
 <summary><h3>12일차(2025.10.15 수)</h3></summary>
 
 #### 오전(3시간)
-- 📜 [7. 함수 호출 방법](docs/02.js_function.md#7-함수-호출-방법)
+- 📜 2장 함수 - [7. 함수 호출 방법](docs/02.js_function.md#7-함수-호출-방법)
   + 📜 [7.4 함수 호출 방법 4 - 생성자 함수로 호출](docs/02.js_function.md#74-함수-호출-방법-4---생성자-함수로-호출)
 
 #### 오후(3시간)
-- 📜 [8. 익명 함수 (Anonymous function)](docs/02.js_function.md#8-익명-함수-anonymous-function)
-- 📜 [9. 콜백 함수 (Callback function)](docs/02.js_function.md#9-콜백-함수-callback-function)
-- 📜 [10. 순수 함수 (Pure Function)](docs/02.js_function.md#10-순수-함수-pure-function)
-- 📜 [11. 고차 함수 (Higher-Order Function)](docs/02.js_function.md#11-고차-함수-higher-order-function)
+- 📜 2장 함수 - [8. 익명 함수 (Anonymous function)](docs/02.js_function.md#8-익명-함수-anonymous-function)
+- 📜 2장 함수 - [9. 콜백 함수 (Callback function)](docs/02.js_function.md#9-콜백-함수-callback-function)
+- 📜 2장 함수 - [10. 순수 함수 (Pure Function)](docs/02.js_function.md#10-순수-함수-pure-function)
+- 📜 2장 함수 - [11. 고차 함수 (Higher-Order Function)](docs/02.js_function.md#11-고차-함수-higher-order-function)
 
 </details>
 
@@ -279,27 +280,37 @@
 <summary><h3>13일차(2025.10.16 목)</h3></summary>
 
 #### 오전(3시간)
-- 📜 [12. 고차 함수 사용 예 - 메모이제이션](docs/02.js_function.md#12-고차-함수-사용-예---메모이제이션)
-- 📜 [1. 프로토타입이란?](docs/03.js_prototype.md#1-프로토타입이란)
-- 📜 [2. 프로토타입과 생성자](docs/03.js_prototype.md#2-프로토타입과-생성자)
-- 📜 [3. 인스턴스 생성과 프로토타입](docs/03.js_prototype.md#3-인스턴스-생성과-프로토타입)
-- 📜 [4. 객체의 프로퍼티 참조](docs/03.js_prototype.md#4-객체의-프로퍼티-참조)
-- 📜 [5. Object](docs/03.js_prototype.md#5-object)
+- 📜 2장 함수 - [12. 고차 함수 사용 예 - 메모이제이션](docs/02.js_function.md#12-고차-함수-사용-예---메모이제이션)
+- 📜 3장 프로토타입과 클래스 - [1. 프로토타입이란?](docs/03.js_prototype.md#1-프로토타입이란)
+- 📜 3장 프로토타입과 클래스 - [2. 프로토타입과 생성자](docs/03.js_prototype.md#2-프로토타입과-생성자)
+- 📜 3장 프로토타입과 클래스 - [3. 인스턴스 생성과 프로토타입](docs/03.js_prototype.md#3-인스턴스-생성과-프로토타입)
+- 📜 3장 프로토타입과 클래스 - [4. 객체의 프로퍼티 참조](docs/03.js_prototype.md#4-객체의-프로퍼티-참조)
+- 📜 3장 프로토타입과 클래스 - [5. Object](docs/03.js_prototype.md#5-object)
 
 #### 오후(3시간)
-- 📜 [6. typeof 연산자](docs/03.js_prototype.md#6-typeof-연산자)
-- 📜 [7. instanceof 연산자](docs/03.js_prototype.md#7-instanceof-연산자)
-- 📜 [8. 상속](docs/03.js_prototype.md#8-상속)
-- 📜 [9. 클래스 정의](docs/03.js_prototype.md#9-클래스-정의)
-- 📜 [10. 인스턴스의 속성 정의](docs/03.js_prototype.md#10-인스턴스의-속성-정의)
-- 📜 [11. 인스턴스의 메서드 정의](docs/03.js_prototype.md#11-인스턴스의-메서드-정의)
+- 📜 3장 프로토타입과 클래스 - [6. typeof 연산자](docs/03.js_prototype.md#6-typeof-연산자)
+- 📜 3장 프로토타입과 클래스 - [7. instanceof 연산자](docs/03.js_prototype.md#7-instanceof-연산자)
+- 📜 3장 프로토타입과 클래스 - [8. 상속](docs/03.js_prototype.md#8-상속)
+- 📜 3장 프로토타입과 클래스 - [9. 클래스 정의](docs/03.js_prototype.md#9-클래스-정의)
+- 📜 3장 프로토타입과 클래스 - [10. 인스턴스의 속성 정의](docs/03.js_prototype.md#10-인스턴스의-속성-정의)
+- 📜 3장 프로토타입과 클래스 - [11. 인스턴스의 메서드 정의](docs/03.js_prototype.md#11-인스턴스의-메서드-정의)
 
 </details>
 
 <details>
 <summary><h3>14일차(2025.10.17 금)</h3></summary>
 
-
+#### 오전(3시간)
+- 📜 3장 프로토타입과 클래스 - [12. 클래스 상속](docs/03.js_prototype.md#12-클래스-상속)
+- 📜 3장 프로토타입과 클래스 - [13. private 속성](docs/03.js_prototype.md#13-private-속성)
+- 📜 2장 함수 - [13. 즉시 실행 함수](#13-즉시-실행-함수)
+#### 오후(3시간)
+- 📜 4장 클로저 - [1. 클로저란?](#1-클로저란)
+- 📜 4장 클로저 - [2. 클로저 용법](#2-클로저-용법)
+  + [2.1 캡슐화](#21-캡슐화)
+  + [2.2 콜백과 타이머](#22-콜백과-타이머)
+  + [2.3 커링](#23-커링)
+  + [2.4 Partial application(부분 적용 함수)](#24-partial-application부분-적용-함수)
 
 </details>
 
@@ -312,11 +323,22 @@
 <summary><h3>15일차(2025.10.20 월)</h3></summary>
 
 #### 오전(3시간)
-
+- 📜 4장 클로저 - 2. 클로저 용법
+  + 📜 [2.5 메모이제이션](#25-메모이제이션)
+- 📜 5장 웹 브라우저 프로그래밍 - [1. 웹 브라우저 환경](#1-웹-브라우저-환경)
+  + 📜 [1.1 웹 브라우저에서 실행되는 자바스크립트 환경](#11-웹-브라우저에서-실행되는-자바스크립트-환경)
+- 📜 5장 웹 브라우저 프로그래밍 - [2. DOM](#2-dom)
+  + 📜 [2.1 Document 객체](#21-document-객체)
+  + 📜 [2.2 주요 노드](#22-주요-노드)
 
 #### 오후(3시간)
-
-
+- 📜 5장 웹 브라우저 프로그래밍 - [3. 노드 찾기](#3-노드-찾기)
+  + 📜 [3.1 태그의 id로 노드 찾기](#31-태그의-id로-노드-찾기)
+  + 📜 [3.2 태그명으로 노드 찾기](#32-태그명으로-노드-찾기)
+  + 📜 [3.3 트리구조로 노드 찾기](#33-트리구조로-노드-찾기)
+  + 📜 [3.4 class 속성으로 노드 찾기](#34-class-속성으로-노드-찾기)
+  + 📜 [3.5 CSS 셀렉터 이용](#35-css-셀렉터-이용)
+  
 </details>
 
 <details>
