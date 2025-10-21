@@ -44,9 +44,9 @@ window.addEventListener('DOMContentLoaded', function(){
   });
 
   // 네번째 버튼 누르면 첫번째 마트 항목 삭제(과제)
-  
 
-  // 다섯번째 버튼 우르면 첫번째 영화 항목 삭제(과제)
+
+  // 다섯번째 버튼 누르면 첫번째 영화 항목 삭제(과제)
 
 
   function addMilk(){
