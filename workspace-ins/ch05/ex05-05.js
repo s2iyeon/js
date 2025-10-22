@@ -33,6 +33,7 @@ function showList(){
 
   const todoListUl = document.querySelector('.todolist');
   todoListElem.forEach(itemLi => todoListUl.appendChild(itemLi));
+  // todoListElem.forEach(itemLi => todoListUl.innerHTML += itemLi);
 }
 
 /**
@@ -107,6 +108,8 @@ function getTodoItemElem(item){
     removeItem(no);
   });
 
+  // 완료/미완료 이벤트 추가
+
   /*
   <li data-no="2" data-done="false">
     <span>2</span>
@@ -116,6 +119,16 @@ function getTodoItemElem(item){
   */
   return liElem;
 }
+
+// function getTodoItemElem(item){
+//   const liElem = `
+//     <li data-no="${item.id}" data-done="${item.done}">
+//       <span>${item.id}</span>
+//       <span>${item.title}</span>
+//       <button type="button">삭제</button>
+//     </li>`;
+//   return liElem;
+// }
 
 /**
  * 추가 버튼 클릭 시 실행되는 이벤트 핸들러
@@ -146,6 +159,7 @@ function addItem(title){
   const todoLi = getTodoItemElem(item);
   // todoListUl.appendChild(todoLi); // 마지막에 추가
   todoListUl.insertBefore(todoLi, todoListUl.firstChild); // 처음에 추가
+  // todoListUl.innerHTML = todoLi + todoListUl.innerHTML;
 }
 
 /**
@@ -172,7 +186,8 @@ function removeItem(no){
  */
 function toggleDone(no){
   const targetLi = document.querySelector(`.todolist > li[data-no="${no}"]`);
-  const isDone = !(targetLi.getAttribute('data-done') === 'true');
+  const beforeDone = targetLi.getAttribute('data-done');
+  const isDone = !(beforeDone === 'true');
   const titleEl = targetLi.querySelector('span:last-of-type');
   if(isDone){ // done이 true라면 <span>샘플2</span> -> <span><s>샘플2</s></span>
     // <s>
@@ -187,6 +202,7 @@ function toggleDone(no){
     // <span>샘플2</span>
     titleEl.firstElementChild.remove();
   }
+  targetLi.setAttribute('data-done', isDone);
 }
 
 // '추가' 버튼 클릭
