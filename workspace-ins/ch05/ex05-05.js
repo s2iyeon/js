@@ -198,8 +198,8 @@ function removeItem(no){
  */
 function toggleDone(no){
   const targetLi = document.querySelector(`.todolist > li[data-no="${no}"]`);
-  const beforeDone = targetLi.getAttribute('data-done');
-  const isDone = !(beforeDone === 'true');
+  const beforeDone = targetLi.getAttribute('data-done'); // 'true'/'false'
+  const isDone = beforeDone === 'true' ? false : true;
   const titleEl = targetLi.querySelector('span:last-of-type');
   if(isDone){ // done이 true라면 <span>샘플2</span> -> <span><s>샘플2</s></span>
     // <s>
@@ -214,6 +214,7 @@ function toggleDone(no){
     // <span>샘플2</span>
     titleEl.firstElementChild.remove();
   }
+  // <li data-done="true"> <-> <li data-done="false">
   targetLi.setAttribute('data-done', isDone);
 }
 
