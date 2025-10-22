@@ -70,7 +70,7 @@ function getTodoItemElem(item){
   deleteElem.appendChild(deleteTxt);
 
   // <li data-no="2">
-  liElem.setAttribute('data-no', '2');
+  liElem.setAttribute('data-no', item.id);
 
   /*
   <li data-no="2">
@@ -133,8 +133,8 @@ function addItem(title){
   };
 
   const todoLi = getTodoItemElem(item);
-  // todoListUl.appendChild(todoLi);
-  todoListUl.insertBefore(todoLi, todoListUl.firstChild);
+  // todoListUl.appendChild(todoLi); // 마지막에 추가
+  todoListUl.insertBefore(todoLi, todoListUl.firstChild); // 처음에 추가
 }
 
 /**
