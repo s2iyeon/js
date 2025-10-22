@@ -43,11 +43,14 @@ window.addEventListener('DOMContentLoaded', function(){
     }
   });
 
-  // 네번째 버튼 누르면 첫번째 마트 항목 삭제(과제)
+  const btn4 = btn3.nextElementSibling;
+  const btn5 = btn4.nextElementSibling;
 
+  // 네번째 버튼 누르면 첫번째 마트 항목 삭제(과제)
+  btn4.addEventListener('click', () => document.querySelector('#buy-list > li:first-child')?.remove());
 
   // 다섯번째 버튼 누르면 첫번째 영화 항목 삭제(과제)
-
+  btn5.addEventListener('click', () => document.querySelector('#movies > li:first-child')?.remove());
 
   function addMilk(){
     const newLi = document.createElement('li');
