@@ -64,8 +64,19 @@ function getTodoItemElem(item){
 
   // <span>2</span>
   noElem.appendChild(noTxt);
-  // <span>샘플2</span>
-  titleElem.appendChild(titleTxt);
+
+  if(item.done){ // 완료
+    // <s>
+    const sElem = document.createElement('s');
+    // <s>샘플2</s>
+    sElem.appendChild(titleTxt);
+    // <span><s>샘플2</s></span>
+    titleElem.appendChild(sElem);
+  }else{ // 미완료
+    // <span>샘플2</span>
+    titleElem.appendChild(titleTxt);
+  }
+  
   // <button type="button">삭제</button>
   deleteElem.setAttribute('type', 'button');
   deleteElem.appendChild(deleteTxt);
@@ -109,6 +120,7 @@ function getTodoItemElem(item){
   });
 
   // 완료/미완료 이벤트 추가
+  titleElem.addEventListener('click', () => toggleDone(item.id));
 
   /*
   <li data-no="2" data-done="false">
