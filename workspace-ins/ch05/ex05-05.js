@@ -96,6 +96,15 @@ function getTodoItemElem(item){
   */
   liElem.appendChild(deleteElem);
 
+
+  // 삭제 이벤트 추가
+  deleteElem.addEventListener('click', function(){
+    // this: 이벤트를 등록한 요소(<button>)
+    const parentLi = this.parentNode; // <button>의 부모인 <li>
+    const no = parentLi.getAttribute('data-no'); // <li data-no=""> 속성 추출
+    removeItem(no);
+  });
+
   /*
   <li data-no="2">
     <span>2</span>
@@ -144,6 +153,15 @@ function addItem(title){
  */
 function handleKeyup(event){
   if(event.key === 'Enter') add();
+}
+
+/**
+ * Todo 아이템 하나를 삭제하는 함수
+ * @param {number} no - 삭제할 Todo 아이템의 번호(id)
+ */
+function removeItem(no){
+  const targetLi = document.querySelector(`.todolist > li[data-no="${no}"]`);
+  targetLi?.remove();
 }
 
 // '추가' 버튼 클릭
