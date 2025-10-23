@@ -81,7 +81,8 @@ function getTodoItemElem(item){
   }
   
   // <button type="button">삭제</button>
-  deleteElem.setAttribute('type', 'button');
+  // deleteElem.setAttribute('type', 'button');
+  deleteElem.type = 'button';
   deleteElem.appendChild(deleteTxt);
 
   // <li data-no="2">
@@ -115,11 +116,17 @@ function getTodoItemElem(item){
   */
   liElem.appendChild(deleteElem);
 
-
   // 삭제 이벤트 추가
-  deleteElem.addEventListener('click', function(){
-    // this: 이벤트를 등록한 요소(<button>)
-    const parentLi = this.parentNode; // <button>의 부모인 <li>
+  deleteElem.addEventListener('click', function(event){
+    // this: 이벤트를 등록한 요소(deleteElem)
+    // const parentLi = this.parentNode; // deleteElem의 부모인 <li>
+
+    // event.target: 이벤트가 발생한 요소(deleteElem)
+    // const parentLi = event.target.parentNode; // deleteElem의 부모인 <li>
+
+    // event.currentTarget: 이벤트를 처리중인 요소(deleteElem)
+    const parentLi = event.currentTarget.parentNode; // deleteElem의 부모인 <li>
+
     // const no = parentLi.getAttribute('data-no'); // <li data-no=""> 속성 추출
     const no = parentLi.dataset.no;
     removeItem(no);
