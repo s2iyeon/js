@@ -1,38 +1,42 @@
+const todoList = [
+  {
+    "id": 1,
+    "title": "JavaScript 공부",
+    "done": true
+  },
+  {
+    "id": 4,
+    "title": "React 공부",
+    "done": false
+  },
+  {
+    "id": 8,
+    "title": "바닐라 프로젝트",
+    "done": false
+  },
+  {
+    "id": 2,
+    "title": "TypeScript 공부",
+    "done": false
+  },
+  {
+    "id": 5,
+    "title": "Final 프로젝트",
+    "done": true
+  }
+];
+
+// 배열의 Todo 아이템 id중 가장 큰값
+let lastNo = Math.max(...todoList.map(item => item.id));
+
 // 할일 목록을 화면에 출력
 function showList(){
-  const todoList = [
-    {
-      "id": 1,
-      "title": "JavaScript 공부",
-      "done": true
-    },
-    {
-      "id": 4,
-      "title": "React 공부",
-      "done": false
-    },
-    {
-      "id": 3,
-      "title": "바닐라 프로젝트",
-      "done": false
-    },
-    {
-      "id": 2,
-      "title": "TypeScript 공부",
-      "done": false
-    },
-    {
-      "id": 5,
-      "title": "Final 프로젝트",
-      "done": true
-    }
-  ];
-
   // Todo 객체를 li 요소로 변환
   const todoListElem = todoList.map(item => getTodoItemElem(item));
 
   const todoListUl = document.querySelector('.todolist');
   todoListElem.forEach(itemLi => todoListUl.appendChild(itemLi));
+  // todoListElem.forEach(itemLi => todoListUl.innerHTML += itemLi);
 }
 
 /**
@@ -63,14 +67,29 @@ function getTodoItemElem(item){
 
   // <span>2</span>
   noElem.appendChild(noTxt);
-  // <span>샘플2</span>
-  titleElem.appendChild(titleTxt);
+
+  if(item.done){ // 완료
+    // <s>
+    const sElem = document.createElement('s');
+    // <s>샘플2</s>
+    sElem.appendChild(titleTxt);
+    // <span><s>샘플2</s></span>
+    titleElem.appendChild(sElem);
+  }else{ // 미완료
+    // <span>샘플2</span>
+    titleElem.appendChild(titleTxt);
+  }
+  
   // <button type="button">삭제</button>
   deleteElem.setAttribute('type', 'button');
   deleteElem.appendChild(deleteTxt);
 
   // <li data-no="2">
-  liElem.setAttribute('data-no', '2');
+  // liElem.setAttribute('data-no', item.id);
+  liElem.dataset.no = item.id; // custom attribute
+  // <li data-no="2" data-done="false">
+  // liElem.setAttribute('data-done', item.done);
+  liElem.dataset.done = item.done;
 
   /*
   <li data-no="2">
@@ -96,8 +115,21 @@ function getTodoItemElem(item){
   */
   liElem.appendChild(deleteElem);
 
+
+  // 삭제 이벤트 추가
+  deleteElem.addEventListener('click', function(){
+    // this: 이벤트를 등록한 요소(<button>)
+    const parentLi = this.parentNode; // <button>의 부모인 <li>
+    // const no = parentLi.getAttribute('data-no'); // <li data-no=""> 속성 추출
+    const no = parentLi.dataset.no;
+    removeItem(no);
+  });
+
+  // 완료/미완료 이벤트 추가
+  titleElem.addEventListener('click', () => toggleDone(item.id));
+
   /*
-  <li data-no="2">
+  <li data-no="2" data-done="false">
     <span>2</span>
     <span>샘플2</span>
     <button type="button">삭제</button>
@@ -105,6 +137,16 @@ function getTodoItemElem(item){
   */
   return liElem;
 }
+
+// function getTodoItemElem(item){
+//   const liElem = `
+//     <li data-no="${item.id}" data-done="${item.done}">
+//       <span>${item.id}</span>
+//       <span>${item.title}</span>
+//       <button type="button">삭제</button>
+//     </li>`;
+//   return liElem;
+// }
 
 /**
  * 추가 버튼 클릭 시 실행되는 이벤트 핸들러
@@ -127,14 +169,15 @@ function add(){
 function addItem(title){
   const todoListUl = document.querySelector('.todolist');
   const item = {
-    id: todoListUl.children.length + 1,
+    id: ++lastNo,
     title,
     done: false
   };
 
   const todoLi = getTodoItemElem(item);
-  // todoListUl.appendChild(todoLi);
-  todoListUl.insertBefore(todoLi, todoListUl.firstChild);
+  // todoListUl.appendChild(todoLi); // 마지막에 추가
+  todoListUl.insertBefore(todoLi, todoListUl.firstChild); // 처음에 추가
+  // todoListUl.innerHTML = todoLi + todoListUl.innerHTML;
 }
 
 /**
@@ -144,6 +187,43 @@ function addItem(title){
  */
 function handleKeyup(event){
   if(event.key === 'Enter') add();
+}
+
+/**
+ * Todo 아이템 하나를 삭제하는 함수
+ * @param {number} no - 삭제할 Todo 아이템의 번호(id)
+ */
+function removeItem(no){
+  const targetLi = document.querySelector(`.todolist > li[data-no="${no}"]`);
+  targetLi?.remove();
+}
+
+/**
+ * Todo 아이템의 완료/미완료 상태를 토글하는 함수
+ * @param {number} no - 토글할 Todo 아이템의 번호(id)
+ */
+function toggleDone(no){
+  const targetLi = document.querySelector(`.todolist > li[data-no="${no}"]`);
+  // const beforeDone = targetLi.getAttribute('data-done'); // 'true'/'false'
+  const beforeDone = targetLi.dataset.done;
+  const isDone = beforeDone === 'true' ? false : true;
+  const titleEl = targetLi.querySelector('span:last-of-type');
+  if(isDone){ // done이 true라면 <span>샘플2</span> -> <span><s>샘플2</s></span>
+    // <s>
+    const sElem = document.createElement('s');
+    // <span></span>, <s>샘플2</s>
+    sElem.appendChild(titleEl.firstChild);
+    // <span><s>샘플2</s></span>
+    titleEl.appendChild(sElem);
+  }else{ // done이 false라면 <span><s>샘플2</s></span> -> <span>샘플2</span>
+    // <span><s></s>샘플2</span>
+    titleEl.appendChild(titleEl.firstElementChild.firstChild);
+    // <span>샘플2</span>
+    titleEl.firstElementChild.remove();
+  }
+  // <li data-done="true"> <-> <li data-done="false">
+  // targetLi.setAttribute('data-done', isDone);
+  targetLi.dataset.done = isDone;
 }
 
 // '추가' 버튼 클릭
