@@ -81,7 +81,8 @@ function getTodoItemElem(item){
   }
   
   // <button type="button">삭제</button>
-  deleteElem.setAttribute('type', 'button');
+  // deleteElem.setAttribute('type', 'button');
+  deleteElem.type = 'button';
   deleteElem.appendChild(deleteTxt);
 
   // <li data-no="2">
