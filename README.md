@@ -7,6 +7,7 @@
 ### [3. 프로토타입, 상속과 클래스](docs/03.js_prototype.md)
 ### [4. 클로저](docs/04.js_closure.md)
 ### [5. 웹 브라우저 프로그래밍](docs/05.js_web.md#웹-브라우저-프로그래밍)
+### [6. 타입스크립트](docs/06.js_typescript.md#타입스크립트)
 
 # 수업 진도
 
