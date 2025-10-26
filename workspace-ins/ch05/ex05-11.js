@@ -7,4 +7,19 @@
 
 
 const table = document.querySelector('table');
-table.addEventListener('click', e => e.target.classList.toggle('red'));
+// 이벤트 위임
+table.addEventListener('click', e => {
+  console.log(e.target);
+  if(e.target.tagName === 'TD'){
+    e.target.classList.toggle('red');
+  }
+});
+
+const btn = document.querySelector('button');
+btn.addEventListener('click', () => {
+  table.innerHTML += `
+    <tr>
+      <td>0</td><td>0</td><td>0</td>
+    </tr>
+  `;
+});
