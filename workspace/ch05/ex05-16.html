@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOM</title>
+  <script defer src="ex05-16.js"></script>
+</head>
+<body>
+  <h1>Web Storage API 예제</h1>
+  
+  <h2>localStorage</h2>
+  <input type="text" id="localKey" placeholder="키">
+  <input type="text" id="localValue" placeholder="값">
+  <button onclick="saveToLocal()">저장</button>
+  <button onclick="loadFromLocal()">불러오기</button>
+  <button onclick="deleteFromLocal()">삭제</button>
+  <button onclick="clearLocal()">전체 삭제</button>
+  <div id="localResult"></div>
+
+  <h2>sessionStorage</h2>
+  <input type="text" id="sessionKey" placeholder="키">
+  <input type="text" id="sessionValue" placeholder="값">
+  <button onclick="saveToSession()">저장</button>
+  <button onclick="loadFromSession()">불러오기</button>
+  <button onclick="deleteFromSession()">삭제</button>
+  <button onclick="clearSession()">전체 삭제</button>
+  <div id="sessionResult"></div>
+
+  <h2>쿠키</h2>
+  <input type="text" id="cookieKey" placeholder="키">
+  <input type="text" id="cookieValue" placeholder="값">
+  <input type="number" id="cookieDays" placeholder="만료일수">
+  <button onclick="saveToCookie()">저장</button>
+  <button onclick="loadFromCookie()">불러오기</button>
+  <div id="cookieResult"></div>
+
+  <h2>현재 저장된 데이터</h2>
+  <button onclick="showAllData()">전체 데이터 보기</button>
+  <div id="allData"></div>
+</body>
+</html>
