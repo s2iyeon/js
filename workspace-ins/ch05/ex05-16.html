@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BOM</title>
-  <script defer src="ex05-15.js"></script>
+  <script defer src="ex05-16.js"></script>
 </head>
 <body>
   <h1>Web Storage API 예제</h1>
@@ -14,6 +14,7 @@
   <input type="text" id="localValue" placeholder="값">
   <button onclick="saveToLocal()">저장</button>
   <button onclick="loadFromLocal()">불러오기</button>
+  <button onclick="deleteFromLocal()">삭제</button>
   <button onclick="clearLocal()">전체 삭제</button>
   <div id="localResult"></div>
 
@@ -22,6 +23,7 @@
   <input type="text" id="sessionValue" placeholder="값">
   <button onclick="saveToSession()">저장</button>
   <button onclick="loadFromSession()">불러오기</button>
+  <button onclick="deleteFromSession()">삭제</button>
   <button onclick="clearSession()">전체 삭제</button>
   <div id="sessionResult"></div>
 
