@@ -1,0 +1,85 @@
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+#todo {
+  width: 400px;
+  margin: 40px auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todoinput {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.todoinput input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.todoinput button {
+  padding: 6px 10px;
+  border: 1px solid #aaa;
+  background-color: #eee;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todolist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todolist li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.todolist li span:first-child {
+  width: 20px;
+  text-align: center;
+  color: #555;
+}
+
+.todolist li span:nth-child(2) {
+  flex: 1;
+}
+
+.todolist li button {
+  padding: 3px 6px;
+  font-size: 12px;
+  border: 1px solid #bbb;
+  background-color: #eee;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todolist li button + button {
+  margin-left: 4px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #666;
+}
