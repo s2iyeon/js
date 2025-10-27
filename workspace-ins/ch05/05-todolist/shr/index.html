@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <div class="todo-app">
+      <header>
+        <h1>TODO LIST - 소혜림</h1>
+      </header>
+
+      <main>
+        <form aria-label="할 일 추가">
+          <label for="todoInput" class="sr-only">할 일 입력</label>
+          <input type="text" id="todoInput" placeholder="할 일을 입력하세요" autofocus autocomplete="off" />
+          <input type="text" style="display: none" />
+          <button type="button" class="add-item">추가</button>
+        </form>
+
+        <section aria-labelledby="todoListTitle">
+          <h2 id="todoListTitle" class="sr-only">할 일 목록</h2>
+          <ul class="todolist">
+            <!-- <li data-no="1">
+              <label>
+                <input type="checkbox" />
+                <span>할 일</span>
+              </label>
+              <button type="button" aria-label="이 항목 삭제">
+                <img src="/public/delete.png" alt="" />
+              </button>
+              <button type="button" aria-label="중요한 일 체크" class="star">
+                <img src="/bean-star.png" alt="" />
+                <img src="/full-star.png" alt="" />
+              </button>
+              <button type=button aria-label="위로 이동">
+                <img src="/public/up.png" alt="">
+              </button>
+              <button type=button aria-label="위로 이동">
+                <img src="/public/down.png" alt="">
+              </button>
+            </li> -->
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <p>멋쟁이 사자처럼 프론트엔드 부트캠프 15기 - 소혜림</p>
+      </footer>
+    </div>
+  </body>
+</html>
