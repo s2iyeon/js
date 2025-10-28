@@ -3,5 +3,5 @@
     function hello(name) {
         return 'Hello ' + name;
     }
-    console.log(hello('TypeScript'));
+    console.log(hello(111));
 })();
