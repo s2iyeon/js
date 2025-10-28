@@ -331,17 +331,6 @@
 <summary><h3>19일차(2025.10.27 월)</h3></summary>
 
 #### 오전(3시간)
-
-
-#### 오후(3시간)
-
-
-</details>
-
-<details>
-<summary><h3>20일차(2025.10.28 화)</h3></summary>
-
-#### 오전(3시간)
 - 5장 웹 브라우저 프로그래밍 - [4. BOM](docs/05.js_web.md#4-bom)
   + [4.3 history 객체](docs/05.js_web.md#43-history-객체)
   + [4.4 screen 객체](docs/05.js_web.md#44-screen-객체)
@@ -351,6 +340,15 @@
   + [5.1 Web APIs란?](docs/05.js_web.md#51-web-apis란)
   + [5.2 Geolocation API](docs/05.js_web.md#52-geolocation-api)
   + [5.3 Web Storage API](docs/05.js_web.md#53-web-storage-api)
+
+</details>
+
+<details>
+<summary><h3>20일차(2025.10.28 화)</h3></summary>
+
+#### 오전(3시간)
+
+#### 오후(3시간)
 
 </details>
 
