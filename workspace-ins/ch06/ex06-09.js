@@ -4,6 +4,6 @@
     ;
     const haru = { name: 'haru', age: 5 };
     const namu = { name: 'namu', age: 8 };
-    console.log(haru.haru, namu.name.toUpperCase());
+    console.log(haru.age, namu.name.toUpperCase());
 })();
 export {};
