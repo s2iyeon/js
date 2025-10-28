@@ -1,11 +1,15 @@
-// // 함수에 타입 지정
+// 함수에 타입 지정
 
-// (()=>{
-//   function getCount(count) {
-//     return 'Count: ' + count;
-//   }
+(()=>{
+  function getCount(count: number): string {
+    return 'Count: ' + count.toFixed(2);
+  }
 
-//   let result = getCount(20);
+  let result = getCount(20.3456);
+  // getCount('hello');
+  // const result2: number = getCount(30);
+  // getCount();
+  // getCount(10, 20);
 
-//   console.log(result);
-// })();
+  console.log(result);
+})();
