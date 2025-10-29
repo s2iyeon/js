@@ -13,8 +13,13 @@
   function echoBoolean(msg: boolean): boolean {
     return msg;
   }
+  function echoDate(msg: Date): Date {
+    return msg;
+  }
 
   console.log(echoString('hello'));
   console.log(echoNumber(100));
   console.log(echoBoolean(true));
+  console.log(echoDate(new Date()));
+  
 })();

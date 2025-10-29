@@ -12,8 +12,12 @@
     function echoBoolean(msg) {
         return msg;
     }
+    function echoDate(msg) {
+        return msg;
+    }
     console.log(echoString('hello'));
     console.log(echoNumber(100));
     console.log(echoBoolean(true));
+    console.log(echoDate(new Date()));
 })();
 export {};
