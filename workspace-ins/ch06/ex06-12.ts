@@ -24,6 +24,9 @@
     content: '내용2',
   };
 
+  // todo1.id = 3; // readonly 속성이라 수정 안됨
+  todo1.title = '할일 수정';
+
   console.log(todo1);
   console.log(todo2);
 
