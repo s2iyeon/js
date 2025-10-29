@@ -9,8 +9,24 @@
     content: '타입스크립트가 코드를 분석해서 적절한 타입을 자동으로 지정',
   };
 
+  // todo1.done = true;
+  // todo1.id = '12';
   
-  interface Todo {}
+  interface Todo {
+    id: number | string;
+    title: string;
+    content: string;
+    done?: boolean;
+  }
 
-  const todo2 = {};
+  const todo2: Todo = {
+    id: 13,
+    title: '할일 13',
+    content: '내용 13'
+  };
+
+  todo2.done = true;
+  todo2.id = '13';
+
+  console.log(todo1, todo2);
 })();
