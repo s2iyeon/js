@@ -2,8 +2,27 @@
 
 (()=>{
   // 객체의 인터페이스 정의
-  // id는 읽기 전용으로 지정하고 done은 옵셔널로 지정
-  interface Todo {}
+  // id는 number, 읽기 전용으로 지정하고 done은 boolean, 옵셔널로 지정
+  // title, content를 string 타입으로 지정
+  interface Todo {
+    
+  }
+
+  const todo1: Todo = {
+    id: 1,
+    title: '할일1',
+    content: '내용1',
+    done: false
+  };
+
+  const todo2: Todo = {
+    id: 2,
+    title: '할일2',
+    content: '내용2',
+  };
+
+  console.log(todo1);
+  console.log(todo2);
 
   
 })();
