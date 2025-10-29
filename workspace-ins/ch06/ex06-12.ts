@@ -5,7 +5,10 @@
   // id는 number, 읽기 전용으로 지정하고 done은 boolean, 옵셔널로 지정
   // title, content를 string 타입으로 지정
   interface Todo {
-    
+    readonly id: number;
+    title: string;
+    content: string;
+    done?: boolean;
   }
 
   const todo1: Todo = {
@@ -24,5 +27,4 @@
   console.log(todo1);
   console.log(todo2);
 
-  
 })();
