@@ -387,10 +387,28 @@
 <summary><h3>21일차(2025.10.29 수)</h3></summary>
 
 #### 오전(3시간)
-
-
+- 6장 타입스크립트 - [9. 인터페이스](docs/06.js_typescript.md#9-인터페이스)
+  + [9.3 선택적 프로퍼티 (optional property)](docs/06.js_typescript.md#93-선택적-프로퍼티-optional-property)
+  + [9.4 읽기 전용 프로퍼티 (readonly)](docs/06.js_typescript.md#94-읽기-전용-프로퍼티-readonly)
+  + [9.5 인터페이스 상속](docs/06.js_typescript.md#95-인터페이스-상속)
+  + [9.6 계층 구조로 상속](docs/06.js_typescript.md#96-계층-구조로-상속)
+  + [9.7 다중 상속](docs/06.js_typescript.md#97-다중-상속)
+  + [9.8 선언 병합 (declaration merging)](docs/06.js_typescript.md#98-선언-병합-declaration-merging)
+  + [9.9 타입 별칭과 인터페이스의 차이점](docs/06.js_typescript.md#99-타입-별칭과-인터페이스의-차이점)
+  + [9.10 인덱스 시그니처 (Index Signature)](docs/06.js_typescript.md#910-인덱스-시그니처-index-signature)
+  
 #### 오후(3시간)
-
+- 6장 타입스크립트 - [10. 제네릭](docs/06.js_typescript.md#10-제네릭)
+  + [10.1 제네릭이란?](docs/06.js_typescript.md#101-제네릭이란)
+  + [10.2 제네릭 타입 제약](docs/06.js_typescript.md#102-제네릭-타입-제약)
+  + [10.3 제네릭 사용처](docs/06.js_typescript.md#103-제네릭-사용처)
+- 6장 타입스크립트 - [11. 타입 추론](docs/06.js_typescript.md#11-타입-추론)
+  + [11.1 타입 추론이란?](docs/06.js_typescript.md#111-타입-추론이란)
+  + [11.2 변수의 타입 추론](docs/06.js_typescript.md#112-변수의-타입-추론)
+  + [11.3 객체의 타입 추론](docs/06.js_typescript.md#113-객체의-타입-추론)
+  + [11.4 함수의 타입 추론](docs/06.js_typescript.md#114-함수의-타입-추론)
+- 6장 타입스크립트 - [12. 리터럴 타입](docs/06.js_typescript.md#12-리터럴-타입)
+  + [12.1 리터럴 타입이란?](docs/06.js_typescript.md#121-리터럴-타입이란)
 
 </details>
 
