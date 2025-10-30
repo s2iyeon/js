@@ -16,16 +16,20 @@
   console.log(typeof new Array());
   console.log(typeof []);
 
-  // // msg의 타입에 따라서 다른 코드를 실행하는 함수
-  // function print(msg: string | number | string[] | Date){
-  //   // FIXME string 타입이거나 배열일 경우 msg의 길이를 출력하세요.
-  //   console.log(msg.length);
+  // msg의 타입에 따라서 다른 코드를 실행하는 함수
+  function print(msg: string | number | string[] | Date){
+    // string 타입이거나 배열일 경우 msg의 길이를 출력하세요.
+    if(typeof msg === 'string' || msg instanceof Array){
+      console.log(msg.length);
+    }    
 
-  //   // FIXME number 타입일 경우 소수점 2자리까지 출력하세요.
-  //   console.log(msg.toFixed(2));
-  // }
+    // number 타입일 경우 소수점 2자리까지 출력하세요.
+    if(typeof msg === 'number'){
+      console.log(msg.toFixed(2));
+    }
+  }
 
-  // print(['hello', 'world']);
-  // print('hello');
-  // print(123.456);
+  print(['hello', 'world']);
+  print('hello');
+  print(123.456);
 })();
