@@ -8,6 +8,7 @@
 ### [4. 클로저](docs/04.js_closure.md)
 ### [5. 웹 브라우저 프로그래밍](docs/05.js_web.md#웹-브라우저-프로그래밍)
 ### [6. 타입스크립트](docs/06.js_typescript.md#타입스크립트)
+### [7. 내장 함수 및 내장 객체](docs/07.js_builtin.md#내장-함수-및-내장-객체)
 
 # 수업 진도
 
@@ -416,10 +417,35 @@
 <summary><h3>22일차(2025.10.30 목)</h3></summary>
 
 #### 오전(3시간)
-
+- 6장 타입스크립트 - [13. 타입 단언 (type assertion)](docs/06.js_typescript.md#13-타입-단언-type-assertion)
+  + [13.1 타입 단언이란?](docs/06.js_typescript.md#131-타입-단언이란)
+  + [13.2 타입 단언 대상](docs/06.js_typescript.md#132-타입-단언-대상)
+  + [13.3 타입 단언 주의 사항](docs/06.js_typescript.md#133-타입-단언-주의-사항)
+- 6장 타입스크립트 - [14. 타입 가드](docs/06.js_typescript.md#14-타입-가드)
+  + [14.1 타입 가드란?](docs/06.js_typescript.md#141-타입-가드란)
+  + [14.2 타입 가드 구문](docs/06.js_typescript.md#142-타입-가드-구문)
 
 #### 오후(3시간)
-
+- 6장 타입스크립트 - [15. 타입 호환](docs/06.js_typescript.md#15-타입-호환)
+  + [15.1 타입 호환이란?](docs/06.js_typescript.md#151-타입-호환이란)
+  + [15.2 호환 가능 대상](docs/06.js_typescript.md#152-호환-가능-대상)
+- 6장 타입스크립트 - [16. 유틸리티 타입 (Utility Types)](docs/06.js_typescript.md#16-유틸리티-타입-utility-types)
+  + [16.1 유틸리티 타입이란?](docs/06.js_typescript.md#161-유틸리티-타입이란)
+  + [16.2 Readonly<Type>](docs/06.js_typescript.md#162-readonlytype)
+  + [16.3 Required<Type>](docs/06.js_typescript.md#163-requiredtype)
+  + [16.4 Partial<Type>](docs/06.js_typescript.md#164-partialtype)
+  + [16.5 Pick<Type, Keys>](docs/06.js_typescript.md#165-picktype-keys)
+  + [16.6 Omit<Type, Keys>](docs/06.js_typescript.md#166-omittype-keys)
+  + [16.7 Record<K, T>](docs/06.js_typescript.md#167-recordk-t)
+- 6장 타입스크립트 - [17. 맵드 타입 (Mapped Types)](docs/06.js_typescript.md#17-맵드-타입-mapped-types)
+  + [17.1 맵드 타입이란?](docs/06.js_typescript.md#171-맵드-타입이란)
+  + [17.2 맵드 타입 기본 문법](docs/06.js_typescript.md#172-맵드-타입-기본-문법)
+  + [17.3 매핑 수정자](docs/06.js_typescript.md#173-매핑-수정자)
+  + [17.4 유틸리티 타입의 구현 원리](docs/06.js_typescript.md#174-유틸리티-타입의-구현-원리)
+- 6장 타입스크립트 - [18. 고급 타입 연산자](docs/06.js_typescript.md#18-고급-타입-연산자)
+  + [18.1 keyof 연산자](docs/06.js_typescript.md#181-keyof-연산자)
+  + [18.2 typeof 연산자](docs/06.js_typescript.md#182-typeof-연산자)
+  + [18.3 인덱스 접근 타입 (Indexed Access Types)](docs/06.js_typescript.md#183-인덱스-접근-타입-indexed-access-types)
 
 </details>
 
