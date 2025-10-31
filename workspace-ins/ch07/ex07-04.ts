@@ -20,6 +20,7 @@
   // 인자값들 중 최소값
   console.log(Math.min(1, 5, 3)); // 1
   console.log(Math.pow(2, 3)); // 8 거듭제곱
+  console.log(2**3); // 8 거듭제곱
   console.log(Math.sqrt(9)); // 3 제곱근
   console.log(Math.PI); // 3.141592653589793
   
