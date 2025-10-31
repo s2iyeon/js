@@ -17,7 +17,14 @@
   haru.age++;
   console.log(haru.age, haru2.age); // 6 6
 
-  
+  // 객체의 복사
+  const haru3 = Object.assign({}, haru, { breed: '' });
+  haru.age++;
+  console.log(haru.age, haru3.age); // 7 6
 
+  // 객체 복사(전개 구문)
+  const haru4 = { ...haru };
+  haru.age++;
+  console.log(haru.age, haru4.age); // 8 7
 })();
 
