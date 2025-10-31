@@ -7,7 +7,7 @@
     const nicknameExp = /^[가-힣a-zA-Z0-9]{2,10}$/; // 한글, 영문, 숫자 2~10자리
     const phoneExp = /^01\d{1}-\d{3,4}-\d{4}$/; // 01로 시작하고 3자리-3~4자리-4자리 숫자
     console.log(emailExp.test('uzoolove@gmail.com')); // true
-    console.log(passwordExp.test('ab123456')); // false
+    console.log(passwordExp.test('ab12345')); // false
     console.log(nicknameExp.test('하루')); // true
     console.log(phoneExp.test('010-1234-5678')); // true
 })();
