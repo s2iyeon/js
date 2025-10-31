@@ -9,15 +9,20 @@ const countSpan = document.querySelector('#container > span');
 btn.addEventListener('click', plus);
 
 function plus(){
-  // const currVal = parseInt(countSpan.lastChild.nodeValue);
-  // const nextVal = currVal + 1;
-  // countSpan.firstChild.nodeValue = nextVal;
+  const currVal = parseInt(countSpan.lastChild.nodeValue);
+  const nextVal = currVal + 1;
+  countSpan.firstChild.nodeValue = nextVal;
+
+  if(nextVal === 100){
+    clearTimeout(timerId);
+  }
   
   // countSpan.textContent = parseInt(countSpan.textContent) + 1;
-  countSpan.textContent++;
+  // countSpan.textContent++;
 }
 
-setTimeout(function(){
+const timerId = setTimeout(function(){
   // 이벤트 취소
   btn.removeEventListener('click', plus);
 }, 1000*10);
+
