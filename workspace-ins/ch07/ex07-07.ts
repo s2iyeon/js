@@ -65,24 +65,26 @@
 
   // 지정한 위치에서 지정한 길이만큼 문자열을 반환
   // Hel(0번째 위치부터 3번째 위치 이전까지 반환(0~2))
-  console.log(msg2.slice());
+  console.log(msg2.slice(0, 3));
+  console.log(msg2.slice(2, 4));
+  console.log(msg2.slice(8));
 
   // or(7번째 위치부터 9번째 위치 이전까지 반환(7~8))
-  console.log(msg2);
+  console.log(msg2.slice(7, 9));
 
   // rld(뒤에서 3번째 위치부터 끝까지 반환)
-  console.log(msg2);
+  console.log(msg2.slice(-3));
 
   // orld(7번째 위치부터 뒤에서 1번째 위치 이전까지 반환)
-  console.log(msg2);
+  console.log(msg2.slice(7, -1));
 
   // 모든 문자열을 소문자로 변환해서 반환
   // hello world
-  console.log(msg2);
+  console.log(msg2.toLowerCase());
 
   // 모든 문자열을 대문자로 변환해서 반환
   // HELLO WORLD
-  console.log(msg2);
+  console.log(msg2.toUpperCase());
 
   console.log(`[${msg}]`);
 
