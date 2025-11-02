@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOM</title>
+  <script defer src="ex05-14.js"></script>
+</head>
+<body>
+  <h1>history 객체</h1>
+  
+  <a href="https://www.naver.com">naver로 이동</a><br>
+  <a href="https://www.google.com">google로 이동</a><br>
+  <button onclick="goBack()">뒤로가기</button>
+  <button onclick="goForward()">앞으로가기</button>
+  
+  <h2>History API</h2>
+  URL: <input type="text"><br>
+  <button onclick="pushHistory()">pushState 추가</button>
+  <button onclick="replaceHistory()">replaceState 교체</button>
+
+  <div id="result"></div>
+</body>
+</html>
