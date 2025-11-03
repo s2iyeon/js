@@ -1,10 +1,8 @@
-// 내장 객체 Array - includes(), concat()
+// 내장 객체 Array - concat()
 
 (()=>{
 
   const arr = ['오렌지', '딸기', '레몬'];
-  console.log(arr.includes('레몬')); // true
-  console.log(arr.includes('사과')); // false
 
   // 배열 결합
   const arr2 = arr.concat(['사과', '바나나'], ['포도']);
