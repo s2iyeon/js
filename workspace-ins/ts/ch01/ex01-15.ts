@@ -8,7 +8,7 @@
   4. 논리 연산자 (&&, ||)
   */
   
-  let result = 5 + 3 * 2; // 5 + 6 = 11
+  let result: number | boolean = 5 + 3 * 2; // 5 + 6 = 11
   console.log(result);
   
   result = (5 + 3) * 2; // 8 * 2 = 16
