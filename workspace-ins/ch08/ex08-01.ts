@@ -2,8 +2,19 @@
 
 (()=>{
 
+  class CustomError extends Error {
+    constructor(message: string){
+      super(message);
+      this.name = '사용자정의에러';
+    }
+  }
+
   function f1() {
-    
+    // const err = new Error('에러 발생');
+    const err = new CustomError('에러 발생');
+    console.log(err.name);
+    console.log(err.message);
+    console.log(err.stack);
   }
 
   function f2() {
