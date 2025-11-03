@@ -8,12 +8,15 @@ function minus(a, b) {
     console.log(`${a} - ${b} = ${a - b}`);
     return a - b;
 }
-function multiply(a, b) {
+// Named Export
+export function multiply(a, b) {
     console.log(`${a} * ${b} = ${a * b}`);
     return a * b;
 }
 function printUser(user) {
     console.log(`${user.name} ${user.age}`);
 }
-export {};
+// Named Export
+export { plus, minus };
 // Default Export
+export default { plus, minus, multiply, printUser };
