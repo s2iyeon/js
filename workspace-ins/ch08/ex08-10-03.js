@@ -13,7 +13,7 @@
             setTimeout(() => {
                 // 시간 걸리는 작업 처리중
                 // ...
-                if (delay < 50000) {
+                if (delay < 5000) {
                     resolve('f1의 작업 결과: ' + delay);
                 }
                 else {
@@ -56,6 +56,8 @@
             numbers.add(number);
             console.log(numbers.size, '로또 번호', number);
         }
+        // compare 함수가 음수를 반환하면 a, b 순서를 유지
+        // 양수를 반환하면 a, b 순서를 바꿈
         return [...numbers].sort((a, b) => a - b);
     }
 })();
