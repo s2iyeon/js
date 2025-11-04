@@ -5,7 +5,7 @@
 
 (()=>{
   function f1(){
-    return new Promise((resolve, reject) => {
+    return new Promise<string>((resolve, reject) => {
       console.log('3. f1 호출됨.');
       const delay = Math.floor(Math.random() * 1000 * 10);
       console.log(`4. 작업 시작...`);
@@ -24,7 +24,7 @@
   function test(){
     console.log('2. test 호출됨.');
     f1().then((result) => {
-      console.log('9. f1 작업 완료 후에 실행.', result);
+      console.log('9. f1 작업 완료 후에 실행.', result.toUpperCase());
     });
     console.log('6. test 리턴됨');
   }
