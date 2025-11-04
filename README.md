@@ -10,6 +10,7 @@
 ### [6. 타입스크립트](docs/06.js_typescript.md#타입스크립트)
 ### [7. 내장 함수 및 내장 객체](docs/07.js_builtin.md#내장-함수-및-내장-객체)
 ### [8. 기타](docs/08.js_etc.md#기타)
+### [9. HTTP와 Ajax](docs/09.js_ajax.md#HTTP와-Ajax)
 
 # 수업 진도
 
