@@ -31,14 +31,30 @@
     console.log('2. test 호출됨.');
 
     // f1을 순차적으로 6번 호출해서 모두 성공한 경우에 결과를 출력
-    f1().then(f1)
-        .then(f1)
-        .then(f1)
-        .then(f1)
-        .then(f1)
-        .then(result => console.log('🍀🍀🍀당신은 행운아🍀🍀🍀 로또 사세요.', generateLottoNumbers()))
-        .catch(reason => console.error(reason));
+    // f1().then(f1)
+    //     .then(f1)
+    //     .then(f1)
+    //     .then(f1)
+    //     .then(f1)
+    //     .then(result => console.log('🍀🍀🍀당신은 행운아🍀🍀🍀 로또 사세요.', generateLottoNumbers()))
+    //     .catch(reason => console.error(reason));
 
+    // f1을 동시에 6번 호출해서 모두 성공한 경우에 결과를 출력
+    let successCount = 0;
+
+    f1().then(onFulfilled);
+    f1().then(onFulfilled);
+    f1().then(onFulfilled);
+    f1().then(onFulfilled);
+    f1().then(onFulfilled);
+    f1().then(onFulfilled);
+
+    function onFulfilled(result: string){
+      console.log(result);
+      if(++successCount === 6){
+        console.log('🍀🍀🍀당신은 행운아🍀🍀🍀 로또 사세요.', generateLottoNumbers());
+      }
+    }
     
     console.log('6. test 리턴됨');
   }
