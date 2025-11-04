@@ -3,7 +3,7 @@
 // ex08-10.ts 복사
 
 (()=>{
-  function f1(){
+  function f1(): Promise<string>{
     return new Promise<string>((resolve, reject) => {
       console.log('3. f1 호출됨.');
       const delay = Math.floor(Math.random() * 1000 * 10);
@@ -20,13 +20,15 @@
     });
   }
   
-  function test(){
+  async function test(){
     console.log('2. test 호출됨.');
-    f1().then((result) => {
-      console.log('9. f1 작업 완료 후에 실행.', result.toUpperCase());
-    }).then(f1).then((result) => {
-      console.log('10. f1 작업 완료 후에 실행.', result.toUpperCase());
-    });
+
+    const result1 = await f1();
+    console.log('9. f1 작업 완료 후에 실행.', result1.toUpperCase());
+
+    const result2 = await f1();
+    console.log('10. f1 작업 완료 후에 실행.', result2.toUpperCase());
+
     console.log('6. test 리턴됨');
   }
 

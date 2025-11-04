@@ -17,13 +17,12 @@
             console.log('5. f1 리턴됨.');
         });
     }
-    function test() {
+    async function test() {
         console.log('2. test 호출됨.');
-        f1().then((result) => {
-            console.log('9. f1 작업 완료 후에 실행.', result.toUpperCase());
-        }).then(f1).then((result) => {
-            console.log('10. f1 작업 완료 후에 실행.', result.toUpperCase());
-        });
+        const result1 = await f1();
+        console.log('9. f1 작업 완료 후에 실행.', result1.toUpperCase());
+        const result2 = await f1();
+        console.log('10. f1 작업 완료 후에 실행.', result2.toUpperCase());
         console.log('6. test 리턴됨');
     }
     // 프로그램 실행 흐름에 맞춰서 콘솔 출력 메세지 앞에 번호 추가
