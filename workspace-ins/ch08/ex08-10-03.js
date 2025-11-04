@@ -13,7 +13,7 @@
             setTimeout(() => {
                 // 시간 걸리는 작업 처리중
                 // ...
-                if (delay < 5000) {
+                if (delay < 50000) {
                     resolve('f1의 작업 결과: ' + delay);
                 }
                 else {
@@ -56,7 +56,7 @@
             numbers.add(number);
             console.log(numbers.size, '로또 번호', number);
         }
-        return [...numbers].sort();
+        return [...numbers].sort((a, b) => a - b);
     }
 })();
 export {};
