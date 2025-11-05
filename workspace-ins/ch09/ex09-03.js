@@ -4,7 +4,7 @@ import { appendImages } from "./utils.js";
 // workspace 폴더에서 npm init -y
 // workspace 폴더에서 npm i axios
 import axios from "axios";
-const url = 'https://api.thecatapi.com/v1/images/searchdfdfg';
+const url = 'https://api.thecatapi.com/v1/images/search';
 const btn = document.querySelector('button');
 btn?.addEventListener('click', getImages);
 async function getImages() {
