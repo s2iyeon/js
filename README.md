@@ -477,10 +477,16 @@
 <summary><h3>24일차(2025.11.03 월)</h3></summary>
 
 #### 오전(3시간)
+- 8장 기타 - [1. 에러 핸들링](docs/08.js_etc.md#1-에러-핸들링)
 
-
-#### 오후(3시간)
-
+#### 오후(4시간 30분)
+- 8장 기타 - [2. ESM (ECMAScript Modules)](docs/08.js_etc.md#2-esm-ecmascript-modules)
+- 8장 기타 - [3. use strict](docs/08.js_etc.md#3-use-strict)
+- 8장 기타 - [4. 동기 방식과 비동기 방식](docs/08.js_etc.md#4-동기-방식과-비동기-방식)
+  + [4.1 script 태그의 속성 async, defer](docs/08.js_etc.md#41-script-태그의-속성-async-defer)
+  + [4.2 일반 함수 (동기 방식)](docs/08.js_etc.md#42-일반-함수-동기-방식)
+  + [4.3 비동기 함수](docs/08.js_etc.md#43-비동기-함수)
+  + [4.4 비동기 함수의 결과 처리 - 1. 콜백 방식](docs/08.js_etc.md#44-비동기-함수의-결과-처리---1-콜백-방식)
 
 </details>
 
@@ -488,10 +494,16 @@
 <summary><h3>25일차(2025.11.04 화)</h3></summary>
 
 #### 오전(3시간)
-
+- 8장 기타 - [4. 동기 방식과 비동기 방식](docs/08.js_etc.md#4-동기-방식과-비동기-방식)
+  + [4.5 비동기 함수의 결과 처리 - 2. Promise](docs/08.js_etc.md#45-비동기-함수의-결과-처리---2-promise)
 
 #### 오후(3시간)
+- 8장 기타 - [4. 동기 방식과 비동기 방식](docs/08.js_etc.md#4-동기-방식과-비동기-방식)
+  + [4.6 비동기 함수의 결과 처리 - 3. async/await](docs/08.js_etc.md#46-비동기-함수의-결과-처리---3-asyncawait)
 
+- 9장 HTTP와 Ajax - [1. HTTP 프로토콜](docs/09.js_ajax.md#1-HTTP-프로토콜)
+  + [1.1 주요 특징](docs/09.js_ajax.md#11-주요-특징)
+  + [1.2 동작 방식](docs/09.js_ajax.md#12-동작-방식)
 
 </details>
 
