@@ -13,10 +13,10 @@
                 // 시간 걸리는 작업 처리중
                 // ...
                 if (delay < 5000) {
-                    resolve('f1의 작업 결과: ' + delay);
+                    resolve('8. f1의 작업 결과: ' + delay);
                 }
                 else {
-                    reject('f1의 작업 실패 사유: ' + delay);
+                    reject('8. f1의 작업 실패 사유: ' + delay);
                 }
             }, delay);
             console.log('5. f1 리턴됨.');
@@ -25,9 +25,11 @@
     function test() {
         console.log('2. test 호출됨.');
         f1().then((result) => {
-            console.log(result);
+            console.log(result.toLocaleLowerCase());
         }).catch((reason) => {
             console.error(reason);
+        }).finally(() => {
+            console.log('9. 비동기 작업 완료.');
         });
         console.log('6. test 리턴됨');
     }

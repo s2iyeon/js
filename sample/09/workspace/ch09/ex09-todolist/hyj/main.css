@@ -1,0 +1,105 @@
+#todo {
+  font-family: Arial, sans-serif;
+  background-color: #ffc;
+  margin: 20px;
+  padding: 20px; /* 전체 여백 확보 */
+  max-width: 500px; /* 너무 길지 않도록 */
+}
+
+.todoinput {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* input과 버튼 사이 간격 */
+  margin-bottom: 16px; /* 입력 영역과 리스트 사이 간격 */
+}
+
+.todoinput input {
+  flex: 1; /* 남은 공간 채우기 */
+  padding: 8px 12px; /* 좌우 여백 확보 */
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.todoinput button {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+}
+
+.todoinput button:hover {
+  background-color: #45a049;
+}
+
+/* li 공통 */
+.todolist li,
+.bookmark li {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  list-style: none;
+}
+
+/* 배경색 구분 */
+.todolist li {
+  background-color: #e0f7fa;
+}
+
+.bookmark li {
+  background-color: #f9f9f9;
+}
+
+/* 텍스트 */
+.todolist li span,
+.bookmark li span {
+  /* flex:1 제거 */
+  /* 텍스트는 내용만큼만 차지 */
+}
+
+/* 버튼 그룹 */
+.todolist li .btn-group,
+.bookmark li .btn-group {
+  margin-left: auto; /* 텍스트와 버튼 사이 공간 확보 */
+  display: flex;
+  gap: 8px; /* 별 버튼과 삭제 버튼 사이 간격 */
+}
+
+/* 즐겨찾기 버튼 */
+.todolist li .btn-group .star-btn,
+.bookmark li .btn-group .star-btn {
+  background-color: #ffeb3b; /* 노란색 */
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.todolist li .btn-group .star-btn:hover,
+.bookmark li .btn-group .star-btn:hover {
+  background-color: #fdd835;
+}
+
+/* 삭제 버튼 */
+.todolist li .btn-group .delete-btn,
+.bookmark li .btn-group .delete-btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.todolist li .btn-group .delete-btn:hover,
+.bookmark li .btn-group .delete-btn:hover {
+  background-color: #e64a19;
+}

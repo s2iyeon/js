@@ -22,6 +22,7 @@
   function test(){
     console.log('2. test 호출됨.');
     f1();
+    f1();
     console.log('6. test 리턴됨');
   }
 
