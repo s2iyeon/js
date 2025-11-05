@@ -1,3 +1,7 @@
 // 고양이 이미지 정보
-interface Cat {
+export interface Cat {
+  id: string;
+  url: string;
+  width: number;
+  height: number;
 }

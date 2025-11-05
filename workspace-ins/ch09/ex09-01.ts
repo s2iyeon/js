@@ -1,18 +1,31 @@
-// // 랜덤 고양이 이미지 가져오기 - XMLHttpRequest 사용
+// 랜덤 고양이 이미지 가져오기 - XMLHttpRequest 사용
 
-// const url = 'https://api.thecatapi.com/v1/images/search';
+import type { Cat } from "./types";
+import { appendImages } from "./utils";
 
-// function getImages(): void{
-//   // Ajax 프로그래밍 순서
-//   // 1. XMLHttpRequest 객체 생성
-  
+const url = 'https://api.thecatapi.com/v1/images/search';
 
-//   // 2. 요청 준비(open)
-  
+const btn = document.querySelector('button');
+btn?.addEventListener('click', getImages);
 
-//   // 4. 응답 데이터 처리
-  
+function getImages(): void{
+  // Ajax 프로그래밍 순서
+  // 1. XMLHttpRequest 객체 생성
+  const xhr = new XMLHttpRequest();  
 
-//   // 3. 서버에 요청(send)
-  
-// };
+  // 2. 요청 준비(open)
+  xhr.open('GET', url, false);
+
+  // 4. 응답 데이터 처리
+  xhr.addEventListener('load', function(){
+    const result = xhr.responseText; // 응답 바디 추출
+    console.log(result);
+    const data: Cat[] = JSON.parse(result);
+    console.log(data);
+    appendImages(data);
+  });
+
+  // 3. 서버에 요청(send)
+  xhr.send();
+};
+
