@@ -1,4 +1,4 @@
-import type { Cat } from "./types";
+import type { Cat } from "./types.js";
 
 // 이미지 목록을 받아서 화면에 추가
 export function appendImages(images: Cat[]){
@@ -13,5 +13,5 @@ export function appendImages(images: Cat[]){
   });
 
   const catList = document.querySelector('#cat-list');
-  catList?.append(...liList); // <ul><li><img src="https://sdfsdf.sdf" height="200" alt="고양이"></li>...</ul>
+  catList?.prepend(...liList); // <ul><li><img src="https://sdfsdf.sdf" height="200" alt="고양이"></li>...</ul>
 }

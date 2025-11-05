@@ -10,5 +10,5 @@ export function appendImages(images) {
         return li;
     });
     const catList = document.querySelector('#cat-list');
-    catList?.append(...liList); // <ul><li><img src="https://sdfsdf.sdf" height="200" alt="고양이"></li>...</ul>
+    catList?.prepend(...liList); // <ul><li><img src="https://sdfsdf.sdf" height="200" alt="고양이"></li>...</ul>
 }
