@@ -1,7 +1,7 @@
 // ex05-05.js 복사
 
 import axios, { AxiosError } from "axios";
-import type { TodoCreateReq, TodoList, TodoListRes } from "./types.js";
+import type { TodoCreateReq, TodoDeleteRes, TodoInfoRes, TodoList, TodoListRes } from "./types.js";
 
 const API_SERVER = 'https://fesp-api.koyeb.app/todo';
 
@@ -147,7 +147,7 @@ function add(){
  */
 async function addItem(title: string){
   try{
-    await axios.post(`${API_SERVER}/todolist`, { title });
+    await axios.post<TodoInfoRes>(`${API_SERVER}/todolist`, { title });
     showList();
   }catch(err){
     if(err instanceof AxiosError){
@@ -169,41 +169,40 @@ function handleKeyup(event: KeyboardEvent){
  * Todo 아이템 하나를 삭제하는 함수
  * @param {number} no - 삭제할 Todo 아이템의 번호(id)
  */
-function removeItem(no: number){
-  const targetLi = document.querySelector(`.todolist > li[data-no="${no}"]`);
-  targetLi?.remove();
+async function removeItem(no: number){
+  try{
+    await axios.delete<TodoDeleteRes>(`${API_SERVER}/todolist/${no}`);
+    showList();
+  }catch(err){
+    if(err instanceof AxiosError){
+      console.log('삭제 실패.', err.response?.data.message);
+    }
+  }
 }
 
 /**
  * Todo 아이템의 완료/미완료 상태를 토글하는 함수
  * @param {number} no - 토글할 Todo 아이템의 번호(id)
  */
-function toggleDone(no: number){
+async function toggleDone(no: number){
   const targetLi = document.querySelector(`.todolist > li[data-no="${no}"]`) as HTMLLIElement;
-  // const beforeDone = targetLi.getAttribute('data-done'); // 'true'/'false'
   const beforeDone = targetLi.dataset.done;
   const isDone = beforeDone === 'true' ? false : true;
-  const titleEl = targetLi.querySelector('span:last-of-type') as HTMLSpanElement;
-  if(isDone){ // done이 true라면 <span>샘플2</span> -> <span><s>샘플2</s></span>
-    // <s>
-    const sElem = document.createElement('s');
-    // <span></span>, <s>샘플2</s>
-    sElem.appendChild(titleEl.firstChild!);
-    // <span><s>샘플2</s></span>
-    titleEl.appendChild(sElem);
-  }else{ // done이 false라면 <span><s>샘플2</s></span> -> <span>샘플2</span>
-    // <span><s></s>샘플2</span>
-    titleEl.appendChild(titleEl.firstElementChild!.firstChild!);
-    // <span>샘플2</span>
-    titleEl.firstElementChild!.remove();
+
+  try{
+    await axios.patch<TodoInfoRes>(`${API_SERVER}/todolist/${no}`, { done: isDone });
+    showList();
+  }catch(err){
+    if(err instanceof AxiosError){
+      console.log('수정 실패.', err.response?.data.message);
+    }
   }
-  // <li data-done="true"> <-> <li data-done="false">
-  // targetLi.setAttribute('data-done', isDone);
-  targetLi.dataset.done = isDone.toString();
 }
 
 // '추가' 버튼 클릭
 document.querySelector('.todoinput > button')!.addEventListener('click', add);
 // input 요소에 키보드 입력
 (document.querySelector('.todoinput > input') as HTMLInputElement)!.addEventListener('keyup', handleKeyup);
+
+// setInterval(showList, 1000);
 showList();
