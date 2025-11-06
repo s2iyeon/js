@@ -9,6 +9,7 @@
     // See also https://aka.ms/tsconfig/module
     "module": "es2022",
     "target": "es2022",
+    "moduleResolution": "bundler", // import시 모듈 해석 방식 지정(node_modules 폴더에서 검색)
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
