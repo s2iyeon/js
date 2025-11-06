@@ -1,45 +1,25 @@
 // ex05-05.js 복사
 
-import type { TodoList } from "./types.js";
+import axios, { AxiosError } from "axios";
+import type { TodoList, TodoListRes } from "./types.js";
 
-const todoList = [
-  {
-    "id": 1,
-    "title": "JavaScript 공부",
-    "done": true
-  },
-  {
-    "id": 4,
-    "title": "React 공부",
-    "done": false
-  },
-  {
-    "id": 8,
-    "title": "바닐라 프로젝트",
-    "done": false
-  },
-  {
-    "id": 2,
-    "title": "TypeScript 공부",
-    "done": false
-  },
-  {
-    "id": 5,
-    "title": "Final 프로젝트",
-    "done": true
+// 할일 목록을 서버에서 조회한 후 화면에 출력
+async function showList(){
+  try{
+    const { data } = await axios.get<TodoListRes>('https://fesp-api.koyeb.app/todo/todolist');
+    if(data.ok){
+      const todoList = data.items;
+      // Todo 객체를 li 요소로 변환
+      const todoListElem = todoList.map(item => getTodoItemElem(item));
+
+      const todoListUl = document.querySelector('.todolist');
+      todoListUl?.append(...todoListElem);
+    }
+  }catch(err){
+    if(err instanceof AxiosError){
+      console.error('에러', err.response?.data.message);
+    }
   }
-];
-
-// 배열의 Todo 아이템 id중 가장 큰값
-let lastNo = Math.max(...todoList.map(item => item.id));
-
-// 할일 목록을 화면에 출력
-function showList(){
-  // Todo 객체를 li 요소로 변환
-  const todoListElem = todoList.map(item => getTodoItemElem(item));
-
-  const todoListUl = document.querySelector('.todolist');
-  todoListUl?.append(...todoListElem);
 }
 
 /**
@@ -126,7 +106,7 @@ function getTodoItemElem(item: TodoList){
 
     // const no = parentLi.getAttribute('data-no'); // <li data-no=""> 속성 추출
     const no = (parentLi as HTMLLIElement).dataset.no;
-    removeItem(no);
+    removeItem(parseInt(no!));
   });
 
   // 완료/미완료 이벤트 추가
@@ -157,7 +137,7 @@ function getTodoItemElem(item: TodoList){
  * 입력창의 값을 가져와 새로운 Todo 아이템을 추가
  */
 function add(){
-  const inputElem = document.querySelector('.todoinput > input');
+  const inputElem = document.querySelector('.todoinput > input') as HTMLInputElement;
   console.log(inputElem.value); // HTML 표준 속성은 DOM 객체의 동일한 속성으로 접근 가능
   if(inputElem.value.trim() !== ''){
     addItem(inputElem.value.trim());
@@ -170,8 +150,8 @@ function add(){
  * 새로운 Todo 아이템을 목록에 추가하는 함수
  * @param {string} title - 할일 제목
  */
-function addItem(title){
-  const todoListUl = document.querySelector('.todolist');
+function addItem(title: string){
+  const todoListUl = document.querySelector('.todolist') as HTMLUListElement;
   const item = {
     id: ++lastNo,
     title,
@@ -189,7 +169,7 @@ function addItem(title){
  * Enter 키 입력 시 추가 기능 실행
  * @param {KeyboardEvent} event - 키보드 이벤트 객체
  */
-function handleKeyup(event){
+function handleKeyup(event: KeyboardEvent){
   if(event.key === 'Enter') add();
 }
 
@@ -197,7 +177,7 @@ function handleKeyup(event){
  * Todo 아이템 하나를 삭제하는 함수
  * @param {number} no - 삭제할 Todo 아이템의 번호(id)
  */
-function removeItem(no){
+function removeItem(no: number){
   const targetLi = document.querySelector(`.todolist > li[data-no="${no}"]`);
   targetLi?.remove();
 }
@@ -206,32 +186,32 @@ function removeItem(no){
  * Todo 아이템의 완료/미완료 상태를 토글하는 함수
  * @param {number} no - 토글할 Todo 아이템의 번호(id)
  */
-function toggleDone(no){
-  const targetLi = document.querySelector(`.todolist > li[data-no="${no}"]`);
+function toggleDone(no: number){
+  const targetLi = document.querySelector(`.todolist > li[data-no="${no}"]`) as HTMLLIElement;
   // const beforeDone = targetLi.getAttribute('data-done'); // 'true'/'false'
   const beforeDone = targetLi.dataset.done;
   const isDone = beforeDone === 'true' ? false : true;
-  const titleEl = targetLi.querySelector('span:last-of-type');
+  const titleEl = targetLi.querySelector('span:last-of-type') as HTMLSpanElement;
   if(isDone){ // done이 true라면 <span>샘플2</span> -> <span><s>샘플2</s></span>
     // <s>
     const sElem = document.createElement('s');
     // <span></span>, <s>샘플2</s>
-    sElem.appendChild(titleEl.firstChild);
+    sElem.appendChild(titleEl.firstChild!);
     // <span><s>샘플2</s></span>
     titleEl.appendChild(sElem);
   }else{ // done이 false라면 <span><s>샘플2</s></span> -> <span>샘플2</span>
     // <span><s></s>샘플2</span>
-    titleEl.appendChild(titleEl.firstElementChild.firstChild);
+    titleEl.appendChild(titleEl.firstElementChild!.firstChild!);
     // <span>샘플2</span>
-    titleEl.firstElementChild.remove();
+    titleEl.firstElementChild!.remove();
   }
   // <li data-done="true"> <-> <li data-done="false">
   // targetLi.setAttribute('data-done', isDone);
-  targetLi.dataset.done = isDone;
+  targetLi.dataset.done = isDone.toString();
 }
 
 // '추가' 버튼 클릭
-document.querySelector('.todoinput > button').addEventListener('click', add);
+document.querySelector('.todoinput > button')!.addEventListener('click', add);
 // input 요소에 키보드 입력
-document.querySelector('.todoinput > input').addEventListener('keyup', handleKeyup);
+(document.querySelector('.todoinput > input') as HTMLInputElement)!.addEventListener('keyup', handleKeyup);
 showList();
