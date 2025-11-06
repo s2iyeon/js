@@ -1,7 +1,10 @@
 // 랜덤 고양이 이미지 가져오기 - Fetch API 사용
 // ex09-01.ts 복사
 import { appendImages } from "./utils.js";
-const url = 'https://api.thecatapi.com/v1/images/search';
+// const url = 'https://api.thecatapi.com/v1/images/search';
+const url = new URL('https://api.thecatapi.com/v1/images/search');
+url.searchParams.set('limit', '10');
+url.searchParams.set('breed_ids', 'pers,siam,sphy');
 const btn = document.querySelector('button');
 btn?.addEventListener('click', getImages);
 async function getImages() {
