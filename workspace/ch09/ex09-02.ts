@@ -4,7 +4,11 @@
 import type { Cat } from "./types.js";
 import { appendImages } from "./utils.js";
 
-const url = 'https://api.thecatapi.com/v1/images/search';
+// const url = 'https://api.thecatapi.com/v1/images/search';
+
+const url = new URL('https://api.thecatapi.com/v1/images/search');
+url.searchParams.set('limit', '10');
+url.searchParams.set('breed_ids', 'pers,siam,sphy');
 
 const btn = document.querySelector('button');
 btn?.addEventListener('click', getImages);
