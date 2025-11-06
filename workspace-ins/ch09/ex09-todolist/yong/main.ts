@@ -1,19 +1,24 @@
 // ex05-05.js 복사
 
 import axios, { AxiosError } from "axios";
-import type { TodoList, TodoListRes } from "./types.js";
+import type { TodoCreateReq, TodoList, TodoListRes } from "./types.js";
+
+const API_SERVER = 'https://fesp-api.koyeb.app/todo';
 
 // 할일 목록을 서버에서 조회한 후 화면에 출력
 async function showList(){
   try{
-    const { data } = await axios.get<TodoListRes>('https://fesp-api.koyeb.app/todo/todolist');
+    const { data } = await axios.get<TodoListRes>(`${API_SERVER}/todolist`);
     if(data.ok){
       const todoList = data.items;
       // Todo 객체를 li 요소로 변환
       const todoListElem = todoList.map(item => getTodoItemElem(item));
 
       const todoListUl = document.querySelector('.todolist');
-      todoListUl?.append(...todoListElem);
+      if(todoListUl){
+        todoListUl.innerHTML = '';
+        todoListUl.append(...todoListElem);
+      }
     }
   }catch(err){
     if(err instanceof AxiosError){
@@ -122,16 +127,6 @@ function getTodoItemElem(item: TodoList){
   return liElem;
 }
 
-// function getTodoItemElem(item){
-//   const liElem = `
-//     <li data-no="${item.id}" data-done="${item.done}">
-//       <span>${item.id}</span>
-//       <span>${item.title}</span>
-//       <button type="button">삭제</button>
-//     </li>`;
-//   return liElem;
-// }
-
 /**
  * 추가 버튼 클릭 시 실행되는 이벤트 핸들러
  * 입력창의 값을 가져와 새로운 Todo 아이템을 추가
@@ -147,21 +142,18 @@ function add(){
 }
 
 /**
- * 새로운 Todo 아이템을 목록에 추가하는 함수
+ * Todo 아이템 등록을 서버에 요청한 후 새로운 목록으로 갱신한다.
  * @param {string} title - 할일 제목
  */
-function addItem(title: string){
-  const todoListUl = document.querySelector('.todolist') as HTMLUListElement;
-  const item = {
-    id: ++lastNo,
-    title,
-    done: false
-  };
-
-  const todoLi = getTodoItemElem(item);
-  // todoListUl.appendChild(todoLi); // 마지막에 추가
-  todoListUl.insertBefore(todoLi, todoListUl.firstChild); // 처음에 추가
-  // todoListUl.innerHTML = todoLi + todoListUl.innerHTML;
+async function addItem(title: string){
+  try{
+    await axios.post(`${API_SERVER}/todolist`, { title });
+    showList();
+  }catch(err){
+    if(err instanceof AxiosError){
+      console.log('등록 실패.', err.response?.data.message);
+    }
+  }
 }
 
 /**
