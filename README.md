@@ -511,10 +511,20 @@
 <summary><h3>26일차(2025.11.05 수)</h3></summary>
 
 #### 오전(3시간)
+- 9장 HTTP와 Ajax - [1. HTTP 프로토콜](docs/09.js_ajax.md#1-HTTP-프로토콜)
+  + [1.3 Request 메시지 구조](docs/09.js_ajax.md#13-request-메시지-구조)
+  + [1.4 Response 메시지 구조](docs/09.js_ajax.md#14-response-메시지-구조)
+  + [1.5 장점](docs/09.js_ajax.md#15-장점)
+  + [1.6 참고](docs/09.js_ajax.md#16-참고)
+  + [1.7 HTTP의 특징](docs/09.js_ajax.md#17-http의-특징)
+  + [1.8 HTTP 주요 메서드](docs/09.js_ajax.md#18-http-주요-메서드)
+- 9장 HTTP와 Ajax - [2. API 테스트](docs/09.js_ajax.md#2-api-테스트)
 
-
-#### 오후(3시간)
-
+#### 오후(5시간)
+- 9장 HTTP와 Ajax - [3. Ajax란?](#3-ajax란)
+- 9장 HTTP와 Ajax - [4. XMLHttpRequest 객체](docs/09.js_ajax.md#4-xmlhttprequest-객체)
+- 9장 HTTP와 Ajax - [5. Fetch API](docs/09.js_ajax.md#5-fetch-api)
+- 9장 HTTP와 Ajax - [6. axios 라이브러리](docs/09.js_ajax.md#6-axios-라이브러리)
 
 </details>
 
